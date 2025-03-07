@@ -1,0 +1,17 @@
+<ROSETTASCRIPTS>
+    <RESIDUE_SELECTORS>
+	<Index name="seg6-16" resnums="6-16"/>
+    </RESIDUE_SELECTORS>
+    <SIMPLE_METRICS>
+        <DihedralDistanceMetric name="seg6-16_dih" use_native="true" residue_selector="seg6-16"/>
+        <TotalEnergyMetric name="seg6-16_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="seg6-16"/>
+        <PeptideInternalHbondsMetric name="seg6-16_hbond" residue_selector="seg6-16"/>
+        <TotalEnergyMetric name="seg6-16_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="seg6-16"/>
+        <RMSDMetric name="seg6-16_rmsd_full" residue_selector="seg6-16" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="seg6-16_rmsd_bb" residue_selector="seg6-16" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+    </SIMPLE_METRICS>
+    <PROTOCOLS>
+        <Add metrics="seg6-16_nmr" labels="seg6-16_nmr"/>
+        <Add metrics="seg6-16_dih,seg6-16_eng,seg6-16_hbond,seg6-16_rmsd_full,seg6-16_rmsd_bb" labels="seg6-16_dih,seg6-16_eng,seg6-16_hbond,seg6-16_rmsd_full,seg6-16_rmsd_bb"/>
+    </PROTOCOLS>
+</ROSETTASCRIPTS>

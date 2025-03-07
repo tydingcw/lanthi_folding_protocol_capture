@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Directory containing the options files
+options_dir="options_refined/"
+
+# Iterate over files in the options directory
+for options_file in ${options_dir}6VHJ_*.options; do
+    # Extract the base filename (e.g., 6VLJ_33) from the options file
+    base_filename=$(basename "${options_file}" .options)
+    
+    # Extract the number from the base filename
+    number="${base_filename#*_}"  # This removes the part before the underscore
+    echo $number
+    
+    # Count the files in the 6VLJ directory that start with the extracted number
+    file_count=$(ls 6VHJ/${number}_* | wc -l)
+    echo $file_count
+    
+    # Check if the count is less than 22
+    if [ "$file_count" -lt 22 ]; then
+        # Run sample_instruct.sh with the options file
+	echo ${options_file}
+        #bash sample_instruct.sh ${options_file} &
+    fi
+done
+

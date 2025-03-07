@@ -1,0 +1,104 @@
+# Restraints file 1: final.upl
+ 12 CYS  HB3    18 ALA  HA      4.47 #SUP  0.97  #QF  0.97
+  4 DBB  HA      4 DBB  HG21    3.26            #peak    19
+  4 DBB  HG21   15 SER  HA      4.37            #peak    20
+ 10 LYS  HA     10 LYS  HD2     5.50            #peak    25 #SUP  0.98  #QF  0.87
+ 10 LYS  HA     10 LYS  HD3     5.50            #peak    25 #SUP  0.98  #QF  0.87
+ 10 LYS  HA     15 SER  QB      5.50            #peak    26
+ 12 CYS  HB2    18 ALA  HA      4.47            #peak    27 #SUP  0.89  #QF  0.89
+ 12 CYS  HA     18 ALA  HB1     5.47            #peak    30 #SUP  0.95  #QF  0.95
+ 12 CYS  HA     16 CYS  HB3     4.28            #peak    32
+ 11 DBB  HB     16 CYS  HB3     4.70            #peak    33 #SUP  0.95  #QF  0.95
+  4 DBB  HB      8 CYS  HB2     4.01            #peak    34
+  4 DBB  HB      8 CYS  HB3     4.01            #peak    35
+ 11 DBB  HB     16 CYS  HB2     3.74            #peak    36 #SUP  0.97  #QF  0.97
+  9 ALA  HB1    14 ALA  HB1     5.47            #peak    40 #SUP  0.98  #QF  0.73
+  9 ALA  HB2    14 ALA  HB1     5.50            #peak    40 #SUP  0.98  #QF  0.73
+  9 ALA  HB3    14 ALA  HB1     5.50            #peak    40 #SUP  0.98  #QF  0.73
+  9 ALA  HB1    14 ALA  HB2     5.42            #peak    41 #SUP  0.97  #QF  0.62
+  9 ALA  HB2    14 ALA  HB2     5.50            #peak    41 #SUP  0.97  #QF  0.62
+  9 ALA  HB3    14 ALA  HB2     5.50            #peak    41 #SUP  0.97  #QF  0.62
+ 11 DBB  HG21   16 CYS  HB2     5.50            #peak    42
+ 12 CYS  HA     16 CYS  HB2     3.80            #peak    44
+ 10 LYS  HA     14 ALA  HB2     4.62            #peak    48
+ 12 CYS  HA     18 ALA  HB2     5.50            #peak    50 #SUP  0.94  #QF  0.94
+  4 DBB  HG22    8 CYS  HB3     5.50            #peak    59 #SUP  1.00  #QF  0.92
+  4 DBB  HG23    8 CYS  HB3     5.50            #peak    59 #SUP  1.00  #QF  0.92
+  4 DBB  HG22    8 CYS  HB2     5.50            #peak    60 #SUP  1.00  #QF  0.93
+  4 DBB  HG23    8 CYS  HB2     5.50            #peak    60 #SUP  1.00  #QF  0.93
+ 12 CYS  HA     18 ALA  HA      5.50            #peak    77 #SUP  0.94  #QF  0.94
+  9 ALA  QB     13 ALA  QB      4.02            #peak    87
+ 14 ALA  H      14 ALA  HB1     4.11 #SUP  1.00
+  2 CYS  HB2     4 DBB  H       4.63            #peak     8 #SUP  0.87  #QF  0.87
+  2 CYS  HB3     4 DBB  H       4.63            #peak     9 #SUP  0.93  #QF  0.93
+  4 DBB  H       8 CYS  HB3     5.07            #peak    10 #SUP  0.98  #QF  0.98
+  4 DBB  H       8 CYS  HB2     5.07            #peak    11 #SUP  0.96  #QF  0.96
+ 17 ALA  HB3    18 ALA  H       3.32            #peak    12 #SUP  0.24  #QF  0.24
+ 16 CYS  HB2    18 ALA  H       4.18            #peak    13 #SUP  0.99  #QF  0.99
+ 18 ALA  H      18 ALA  HB2     4.08            #peak    15 #SUP  0.99  #QF  0.99
+ 18 ALA  H      18 ALA  HB1     4.00            #peak    16 #SUP  1.00
+ 16 CYS  HB3    18 ALA  H       3.53            #peak    17 #SUP  0.99  #QF  0.99
+ 12 CYS  HA     14 ALA  H       3.93            #peak    23
+ 16 CYS  H      16 CYS  HB3     3.72            #peak    25 #SUP  0.99  #QF  0.99
+ 11 DBB  HB     16 CYS  H       4.77            #peak    27
+ 18 ALA  HB1    19 SER  H       3.70            #peak    28 #SUP  0.92  #QF  0.92
+ 18 ALA  HB2    19 SER  H       3.91            #peak    29 #SUP  0.95  #QF  0.95
+ 14 ALA  H      16 CYS  HB2     5.50            #peak    32 #SUP  0.89  #QF  0.89
+ 16 CYS  H      16 CYS  HB2     3.10            #peak    33 #SUP  0.89  #QF  0.89
+ 14 ALA  HB2    16 CYS  H       5.33            #peak    34 #SUP  0.95  #QF  0.95
+ 14 ALA  HB1    16 CYS  H       5.50            #peak    35 #SUP  0.96  #QF  0.96
+ 10 LYS  H      14 ALA  HB2     5.50            #peak    36 #SUP  0.90  #QF  0.90
+  9 ALA  H      14 ALA  HB2     3.47            #peak    37
+ 14 ALA  HB2    15 SER  H       3.98            #peak    38 #SUP  0.92  #QF  0.92
+  9 ALA  H      14 ALA  HB1     3.67            #peak    42
+  6 ASP  HB2     7 GLY  H       5.24            #peak    45 #SUP  0.87  #QF  0.64
+  6 ASP  HB3     7 GLY  H       5.24            #peak    45 #SUP  0.87  #QF  0.64
+  2 CYS  HB3     3 GLY  H       5.45            #peak    46 #SUP  0.78  #QF  0.78
+  2 CYS  HB2     3 GLY  H       5.45            #peak    47 #SUP  0.98  #QF  0.98
+ 14 ALA  HB1    15 SER  H       4.19            #peak    48 #SUP  0.89  #QF  0.89
+  4 DBB  HB      5 GLY  H       3.96            #peak    49 #SUP  0.89  #QF  0.89
+ 16 CYS  HB3    17 ALA  H       3.88            #peak    50 #SUP  0.96  #QF  0.96
+  8 CYS  HA      9 ALA  H       2.73            #peak    61 #SUP  0.98  #QF  0.98
+  9 ALA  HA     10 LYS  H       2.95            #peak    69 #SUP  0.40  #QF  0.40
+ 11 DBB  H      16 CYS  HB2     4.98            #peak    71 #SUP  0.93  #QF  0.93
+ 10 LYS  H      10 LYS  HD2     5.50            #peak    74 #SUP  0.98  #QF  0.90
+ 10 LYS  H      10 LYS  HD3     5.50            #peak    74 #SUP  0.98  #QF  0.90
+ 17 ALA  H      17 ALA  HB2     3.33            #peak    76 #SUP  0.80  #QF  0.25
+  9 ALA  H       9 ALA  HB1     4.12            #peak    77 #SUP  0.99  #QF  0.82
+  9 ALA  HB1    10 LYS  H       4.16            #peak    79 #SUP  0.99  #QF  0.66
+  9 ALA  HB2    10 LYS  H       4.78            #peak    79 #SUP  0.99  #QF  0.66
+  9 ALA  HB3    10 LYS  H       4.58            #peak    79 #SUP  0.99  #QF  0.66
+ 10 LYS  H      10 LYS  HG3     3.54            #peak    81 #SUP  0.90  #QF  0.90
+ 10 LYS  H      10 LYS  HG2     3.54            #peak    82 #SUP  0.86  #QF  0.86
+ 17 ALA  HB3    19 SER  H       4.38            #peak    83 #SUP  0.67  #QF  0.67
+  7 GLY  H       8 CYS  H       3.68            #peak    85 #SUP  0.91  #QF  0.91
+  3 GLY  H       4 DBB  H       4.25            #peak    86 #SUP  0.91  #QF  0.91
+  4 DBB  H       5 GLY  H       4.42            #peak    87 #SUP  0.98  #QF  0.98
+  6 ASP  H       8 CYS  H       5.50            #peak    89 #SUP  0.94  #QF  0.94
+ 17 ALA  H      18 ALA  H       3.97            #peak    90 #SUP  0.98  #QF  0.98
+ 18 ALA  H      19 SER  H       4.04            #peak    91 #SUP  0.94  #QF  0.94
+ 11 DBB  H      14 ALA  H       4.85            #peak    92 #SUP  0.38  #QF  0.38
+ 11 DBB  H      16 CYS  H       4.14            #peak    93
+ 15 SER  H      16 CYS  H       3.86            #peak    94 #SUP  0.87  #QF  0.87
+ 13 ALA  H      14 ALA  H       3.24            #peak    95 #SUP  0.85  #QF  0.85
+  8 CYS  H       9 ALA  H       4.87            #peak    98 #SUP  0.96  #QF  0.96
+  6 ASP  HA      8 CYS  H       4.23            #peak   104 #SUP  0.92  #QF  0.92
+  6 ASP  HA      7 GLY  H       3.21            #peak   107 #SUP  0.86  #QF  0.86
+ 10 LYS  HA     11 DBB  H       2.80            #peak   108 #SUP  0.89  #QF  0.89
+ 16 CYS  HB2    17 ALA  H       4.26            #peak   120 #SUP  1.00
+  4 DBB  HG22    5 GLY  H       4.75            #peak   122 #SUP  0.98  #QF  0.49
+  4 DBB  HG23    5 GLY  H       4.60            #peak   122 #SUP  0.98  #QF  0.49
+ 16 CYS  HA     17 ALA  H       3.16            #peak   124 #SUP  0.88  #QF  0.88
+ 12 CYS  HA     16 CYS  H       4.48            #peak   126 #SUP  0.87  #QF  0.87
+  2 CYS  QB      4 DBB  H       3.77            #peak     8
+  2 CYS  QB      4 DBB  HA      4.42            #peak    10
+  4 DBB  H       8 CYS  QB      4.39            #peak    10
+  4 DBB  HB      8 CYS  QB      3.46            #peak    34
+  5 GLY  H       8 CYS  QB      4.72            #peak    44
+  5 GLY  QA      6 ASP  H       2.94            #peak    57
+  6 ASP  QB      7 GLY  H       4.47            #peak    45
+  8 CYS  QB      9 ALA  H       4.22            #peak    41
+ 10 LYS  HA     10 LYS  QG      3.74            #peak    15
+ 12 CYS  QB     18 ALA  H       4.80            #peak    14
+ 12 CYS  QB     18 ALA  HA      3.60 
+ 12 CYS  QB     19 SER  H       5.30            #peak    30

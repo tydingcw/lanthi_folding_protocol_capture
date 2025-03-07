@@ -1,0 +1,52 @@
+REMARK Conversion of BMRB NMR-Star Version 3 Format Chemical Shifts
+REMARK TALOS-N Protein Secondary Chemical Shift Table for bmr30789_3_7ju9_edit.str.txt
+REMARK 
+REMARK  SHIFT is secondary chemical shift
+REMARK 
+REMARK  CS_OBS is the original chemical shift
+REMARK 
+REMARK  CS_ADJ is the adjustment used to calculate SHIFT.
+REMARK 
+REMARK  TALOS-N Version 4.12 Rev 2023.083.11.36 TALOSN_INFO
+
+DATA FIRST_RESID 1
+DATA SEQUENCE GRIDACPAGG GCCEQCGACC
+
+VARS   RESID RESNAME ATOMNAME SHIFT CS_OBS CS_ADJ 
+FORMAT %4d %1s %4s %8.3f %9.3f %9.3f
+
+   1 G   HA   -0.151     3.809     3.960
+   2 R   HA   -0.110     4.230     4.340
+   2 R   HN    0.182     8.452     8.270
+   3 I   HA   -0.150     4.020     4.170
+   3 I   HN    0.055     8.265     8.210
+   4 D   HA   -0.120     4.520     4.640
+   4 D   HN    0.061     8.431     8.370
+   5 A   HN    1.008     9.158     8.150
+   6 C   HA    0.221     4.681     4.460
+   6 C   HN   -0.305     7.925     8.230
+   7 P   HA   -0.190     4.230     4.420
+   8 A   HA   -0.208     4.112     4.320
+   8 A   HN    0.081     8.231     8.150
+   9 G   HA   -0.074     3.886     3.960
+   9 G   HN   -0.167     8.123     8.290
+  10 G   HA   -0.084     3.876     3.960
+  10 G   HN   -0.073     8.217     8.290
+  11 G   HA   -0.187     3.773     3.960
+  11 G   HN    0.134     8.424     8.290
+  12 C   HA   -0.060     4.400     4.460
+  12 C   HN   -0.490     7.740     8.230
+  13 C   HA   -0.095     4.365     4.460
+  13 C   HN    0.165     8.395     8.230
+  14 E   HA   -0.159     4.191     4.350
+  14 E   HN   -0.309     8.051     8.360
+  15 Q   HA   -0.209     4.131     4.340
+  15 Q   HN    0.122     8.392     8.270
+  16 C   HA    0.266     4.726     4.460
+  16 C   HN   -1.260     6.970     8.230
+  17 G   HA    0.127     4.087     3.960
+  17 G   HN    0.080     8.370     8.290
+  18 A   HN    1.619     9.769     8.150
+  19 C   HA    0.077     4.537     4.460
+  19 C   HN   -0.636     7.594     8.230
+  20 C   HA   -0.481     3.979     4.460

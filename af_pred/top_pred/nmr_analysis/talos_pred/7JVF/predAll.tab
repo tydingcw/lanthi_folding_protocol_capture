@@ -1,0 +1,40 @@
+REMARK TALOS-N Protein Backbone Torsion Angle Prediction Table
+REMARK  Database Penta-peptide Matches for bmr30713_3_7jvf_edit.str.txt
+REMARK 
+REMARK  RESID_Q_CENTER is the residue id of query penta-peptide sequence.
+REMARK 
+REMARK  RESNAMES_Q is the query penta-peptide sequence.
+REMARK 
+REMARK  DIST is the TALOS-N database matching score.
+REMARK 
+REMARK  W is a weighting factor used to calculate the average predicted angles.
+REMARK 
+REMARK  RESNAMES_DB is the database penta-peptide sequence.
+REMARK 
+REMARK  *_L1 are the residue numbers, phi/psi/chi1 torsion angles (degrees) 
+REMARK  or the chemical shifts of the third residue of the database
+REMARK  penta-peptide.
+REMARK 
+REMARK  RESID is the residue number of center residue of database penta-peptide.
+REMARK 
+REMARK  HN N HA C CA CB are secondary chemical shifts of center residue 
+REMARK  of database penta-peptide.
+REMARK 
+REMARK  PHI/PSI/CHI1 is the phi/psi/chi1 torsion angles (degrees) of the 
+REMARK  center residue of the database penta-peptide.
+REMARK 
+REMARK  *_R1 are the residue numbers, phi/psi/chi1 torsion angles (degrees) 
+REMARK  or the chemical shifts of the fifth residue of the database
+REMARK  penta-peptide.
+REMARK 
+REMARK  SOURCE is protein name of the database triplet.
+REMARK 
+REMARK  TALOS-N Version 4.12 Rev 2023.083.11.36 TALOSN_INFO
+REMARK 
+
+DATA FIRST_RESID 1
+DATA SEQUENCE AGGAIPCLMC GCGWLAGLCV R
+
+VARS   INDEX RESID_Q_CENTER RESNAMES_Q DIST W RESNAMES_DB RESID_L1 PHI_L1 PSI_L1 CHI1_L1 HN_L1 N_L1 HA_L1 C_L1 CA_L1 CB_L1 RESID PHI PSI CHI1 HN N HA C CA CB RESID_R1 PHI_R1 PSI_R1 CHI1_R1 HN_R1 N_R1 HA_R1 C_R1 CA_R1 CB_R1 SOURCE 
+FORMAT %4d %4d %7s %6.3f %4.2f  %s %4d %6.1f %6.1f %4.0f %5.2f %5.1f %5.2f %5.1f %5.1f %5.1f %4d %6.1f %6.1f %4.0f %5.2f %5.1f %5.2f %5.1f %5.1f %5.1f %4d %6.1f %6.1f %4.0f %5.2f %5.1f %5.2f %5.1f %5.1f %5.1f %s
+

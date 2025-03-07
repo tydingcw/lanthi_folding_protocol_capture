@@ -1,0 +1,12 @@
+-parser:protocol relax_7JU9_bb.xml
+-in:file:native /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/renamed_pdb//7JU9_1_rename.pdb
+-nstruct 20
+-out:file:scorefile 7JU9_bb_relax.sc
+-use_input_sc true
+-in:file:fullatom
+-ignore_zero_occupancy false
+-linmem_ig 10
+-out:pdb_gz
+-out:prefix 7JU9_native/bb_
+-in:detect_disulf false
+-in:file:extra_res_path /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/NCAA/uff_params/final_params/

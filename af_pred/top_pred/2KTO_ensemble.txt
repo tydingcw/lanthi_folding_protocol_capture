@@ -1,0 +1,14 @@
+score:  154.68768979248014
+2KTO/sample_2KTO_4_0169.pdb.gz
+2KTO/sample_2KTO_4_0143.pdb.gz
+2KTO/sample_2KTO_3_0558.pdb.gz
+2KTO/sample_2KTO_3_0917.pdb.gz
+2KTO/sample_2KTO_0_0352.pdb.gz
+2KTO/sample_2KTO_3_0850.pdb.gz
+2KTO/sample_2KTO_4_0562.pdb.gz
+2KTO/sample_2KTO_0_0338.pdb.gz
+2KTO/sample_2KTO_1_0128.pdb.gz
+2KTO/sample_2KTO_1_0412.pdb.gz
+2KTO/sample_2KTO_4_0871.pdb.gz
+2KTO/sample_2KTO_3_0180.pdb.gz
+2KTO/sample_2KTO_4_0698.pdb.gz

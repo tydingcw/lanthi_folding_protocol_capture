@@ -1,0 +1,54 @@
+REMARK Conversion of BMRB NMR-Star Version 3 Format Chemical Shifts
+REMARK TALOS-N Protein Secondary Chemical Shift Table for bmr30631_3_6pqg_edit.str.txt
+REMARK 
+REMARK  SHIFT is secondary chemical shift
+REMARK 
+REMARK  CS_OBS is the original chemical shift
+REMARK 
+REMARK  CS_ADJ is the adjustment used to calculate SHIFT.
+REMARK 
+REMARK  TALOS-N Version 4.12 Rev 2023.083.11.36 TALOSN_INFO
+
+DATA FIRST_RESID 1
+DATA SEQUENCE ACGCGDGCAK CCACSCACS
+
+VARS   RESID RESNAME ATOMNAME SHIFT CS_OBS CS_ADJ 
+FORMAT %4d %1s %4s %8.3f %9.3f %9.3f
+
+   1 A   HA   -0.126     4.194     4.320
+   2 C   HA    0.407     4.867     4.460
+   2 C   HN    0.444     8.674     8.230
+   3 G   HA    0.021     3.981     3.960
+   3 G   HN    0.633     8.923     8.290
+   4 C   HA    0.126     4.586     4.460
+   4 C   HN   -0.777     7.453     8.230
+   5 G   HA    0.060     4.021     3.960
+   5 G   HN    0.516     8.806     8.290
+   6 D   HA   -0.237     4.403     4.640
+   6 D   HN    0.312     8.682     8.370
+   7 G   HA   -0.110     3.850     3.960
+   7 G   HN    0.723     9.013     8.290
+   8 C   HA   -0.301     4.159     4.460
+   8 C   HN   -0.665     7.565     8.230
+   9 A   HA    0.166     4.486     4.320
+   9 A   HN    0.378     8.528     8.150
+  10 K   HA    0.115     4.435     4.320
+  10 K   HN    0.214     8.464     8.250
+  11 C   HA    0.521     4.981     4.460
+  11 C   HN    0.279     8.509     8.230
+  12 C   HA   -0.432     4.028     4.460
+  12 C   HN    1.605     9.835     8.230
+  13 A   HA    0.048     4.368     4.320
+  13 A   HN    0.444     8.594     8.150
+  14 C   HA    0.119     4.579     4.460
+  14 C   HN   -0.188     8.042     8.230
+  15 S   HA    0.152     4.622     4.470
+  15 S   HN    0.316     8.626     8.310
+  16 C   HA   -0.070     4.390     4.460
+  16 C   HN   -0.148     8.082     8.230
+  17 A   HA   -0.246     4.074     4.320
+  17 A   HN    0.662     8.812     8.150
+  18 C   HA    0.223     4.683     4.460
+  18 C   HN   -0.339     7.891     8.230
+  19 S   HA   -0.200     4.270     4.470
+  19 S   HN   -0.166     8.144     8.310

@@ -1,0 +1,35 @@
+<ROSETTASCRIPTS>
+    <RESIDUE_SELECTORS>
+	<Index name="seg1-17" resnums="1-5"/>
+	<Index name="seg18-25" resnums="18-25"/>
+	<Index name="seg26-38" resnums="26-38"/>
+    </RESIDUE_SELECTORS>
+    <SIMPLE_METRICS>
+        <DihedralDistanceMetric name="seg1-17_dih" use_native="true" residue_selector="seg1-17"/>
+        <TotalEnergyMetric name="seg1-17_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="seg1-17"/>
+        <PeptideInternalHbondsMetric name="seg1-17_hbond" residue_selector="seg1-17"/>
+        <TotalEnergyMetric name="seg1-17_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="seg1-17"/>
+        <RMSDMetric name="seg1-17_rmsd_full" residue_selector="seg1-17" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="seg1-17_rmsd_bb" residue_selector="seg1-17" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="seg18-25_dih" use_native="true" residue_selector="seg18-25"/>
+        <TotalEnergyMetric name="seg18-25_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="seg18-25"/>
+        <PeptideInternalHbondsMetric name="seg18-25_hbond" residue_selector="seg18-25"/>
+        <TotalEnergyMetric name="seg18-25_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="seg18-25"/>
+        <RMSDMetric name="seg18-25_rmsd_full" residue_selector="seg18-25" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="seg18-25_rmsd_bb" residue_selector="seg18-25" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="seg26-38_dih" use_native="true" residue_selector="seg26-38"/>
+        <TotalEnergyMetric name="seg26-38_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="seg26-38"/>
+        <PeptideInternalHbondsMetric name="seg26-38_hbond" residue_selector="seg26-38"/>
+        <TotalEnergyMetric name="seg26-38_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="seg26-38"/>
+        <RMSDMetric name="seg26-38_rmsd_full" residue_selector="seg26-38" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="seg26-38_rmsd_bb" residue_selector="seg26-38" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+    </SIMPLE_METRICS>
+    <PROTOCOLS>
+        <Add metrics="seg1-17_nmr" labels="seg1-17_nmr"/>
+        <Add metrics="seg18-25_nmr" labels="seg18-25_nmr"/>
+        <Add metrics="seg26-38_nmr" labels="seg26-38_nmr"/>
+        <Add metrics="seg1-17_dih,seg1-17_eng,seg1-17_hbond,seg1-17_rmsd_full,seg1-17_rmsd_bb" labels="seg1-17_dih,seg1-17_eng,seg1-17_hbond,seg1-17_rmsd_full,seg1-17_rmsd_bb"/>
+        <Add metrics="seg18-25_dih,seg18-25_eng,seg18-25_hbond,seg18-25_rmsd_full,seg18-25_rmsd_bb" labels="seg18-25_dih,seg18-25_eng,seg18-25_hbond,seg18-25_rmsd_full,seg18-25_rmsd_bb"/>
+        <Add metrics="seg26-38_dih,seg26-38_eng,seg26-38_hbond,seg26-38_rmsd_full,seg26-38_rmsd_bb" labels="seg26-38_dih,seg26-38_eng,seg26-38_hbond,seg26-38_rmsd_full,seg26-38_rmsd_bb"/>
+    </PROTOCOLS>
+</ROSETTASCRIPTS>

@@ -1,0 +1,310 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+    	<ScoreFunction name="r15" weights="ref2015"/>
+    	<ScoreFunction name="r15_cst" weights="ref2015_cst">
+           <Reweight scoretype="chainbreak" weight="40.0" />
+        </ScoreFunction>
+    	<ScoreFunction name="r15_cart" weights="ref2015_cart_cst">
+            <Reweight scoretype="angle_constraint" weight="3.0" />
+        </ScoreFunction>
+    	<ScoreFunction name="bb_only" weights="empty.wts" >
+            <Reweight scoretype="fa_rep" weight="0.1" />
+            <Reweight scoretype="fa_atr" weight="0.2" />
+            <Reweight scoretype="hbond_sr_bb" weight="2.0" />
+            <Reweight scoretype="hbond_lr_bb" weight="2.0" />
+            <Reweight scoretype="rama_prepro" weight="0.45" />
+            <Reweight scoretype="omega" weight="0.4" />
+            <Reweight scoretype="p_aa_pp" weight="0.6" />
+        </ScoreFunction>
+    </SCOREFXNS>
+    <TASKOPERATIONS>
+        <IncludeCurrent name="incl_curr" />
+    </TASKOPERATIONS>
+    <RESIDUE_SELECTORS>
+        <Index name="peptide" resnums="%%start%%-%%end%%"/>
+        <Index name="lan1" resnums="%%lan_st1%%,%%lan_end1%%"/>
+        <Index name="ring1" resnums="%%ring_st1%%-%%ring_end1%%"/>
+        <Index name="lan2" resnums="%%lan_st2%%,%%lan_end2%%"/>
+        <Index name="ring2" resnums="%%ring_st2%%-%%ring_end2%%"/>
+        <Index name="lan3" resnums="%%lan_st3%%,%%lan_end3%%"/>
+        <Index name="ring3" resnums="%%ring_st3%%-%%ring_end3%%"/>
+        <Index name="lan4" resnums="%%lan_st4%%,%%lan_end4%%"/>
+        <Index name="ring4" resnums="%%ring_st4%%-%%ring_end4%%"/>
+    </RESIDUE_SELECTORS>
+    <SIMPLE_METRICS>
+        <RMSDMetric name="calc_rmsd_full" residue_selector="peptide" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="calc_rmsd_bb" residue_selector="peptide" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <TotalEnergyMetric name="cst_eng" scorefxn="r15_cst" scoretype="atom_pair_constraint" />
+        <TotalEnergyMetric name="eng_no_cst" scorefxn="r15" />
+        <SasaMetric name="SASA" />
+        <DihedralDistanceMetric name="ring1_dih" use_native="true" residue_selector="ring1"/>
+        <TotalEnergyMetric name="ring1_eng" scorefxn="r15" scoretype="total_score" residue_selector="ring1"/>
+        <PeptideInternalHbondsMetric name="ring1_hbond" residue_selector="ring1"/>
+        <TotalEnergyMetric name="ring1_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring1"/>
+        <RMSDMetric name="ring1_rmsd_full" residue_selector="ring1" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring1_rmsd_bb" residue_selector="ring1" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="ring2_dih" use_native="true" residue_selector="ring2"/>
+        <TotalEnergyMetric name="ring2_eng" scorefxn="r15" scoretype="total_score" residue_selector="ring2"/>
+        <PeptideInternalHbondsMetric name="ring2_hbond" residue_selector="ring2"/>
+        <TotalEnergyMetric name="ring2_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring2"/>
+        <RMSDMetric name="ring2_rmsd_full" residue_selector="ring2" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring2_rmsd_bb" residue_selector="ring2" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="ring3_dih" use_native="true" residue_selector="ring3"/>
+        <TotalEnergyMetric name="ring3_eng" scorefxn="r15" scoretype="total_score" residue_selector="ring3"/>
+        <PeptideInternalHbondsMetric name="ring3_hbond" residue_selector="ring3"/>
+        <TotalEnergyMetric name="ring3_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring3"/>
+        <RMSDMetric name="ring3_rmsd_full" residue_selector="ring3" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring3_rmsd_bb" residue_selector="ring3" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="ring4_dih" use_native="true" residue_selector="ring4"/>
+        <TotalEnergyMetric name="ring4_eng" scorefxn="r15" scoretype="total_score" residue_selector="ring4"/>
+        <PeptideInternalHbondsMetric name="ring4_hbond" residue_selector="ring4"/>
+        <TotalEnergyMetric name="ring4_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring4"/>
+        <RMSDMetric name="ring4_rmsd_full" residue_selector="ring4" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring4_rmsd_bb" residue_selector="ring4" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+    </SIMPLE_METRICS>
+    <FILTERS>
+        <ChainBreak name="chainbrk" />
+    </FILTERS>
+    <MOVERS>
+        <FastRelax name="init_frlx" repeats="1" scorefxn="r15_cst" min_type="dfpmin"
+            task_operations="incl_curr" />
+        <RandomizeBBByRamaPrePro name="ramarand_pep" residue_selector="peptide"/>
+        <AddChainBreak name="findbrk" find_automatically="true" distance_cutoff="1.5" />
+                    <FastRelax name="final_frlx" repeats="3" scorefxn="r15_cst" min_type="dfpmin"
+            task_operations="incl_curr" />
+        <FastRelax name="cart_frlx" repeats="1" scorefxn="r15_cart" min_type="dfpmin"
+            task_operations="incl_curr" cartesian="true" >
+                <MoveMap name="cart_mm">
+                    <Span begin="1" end="999" chi="1" bb="1" bondlength="1" bondangle="1" />
+                </MoveMap>
+            </FastRelax>
+        <AddConstraints name="add_omega_cst" >
+            <DihedralConstraintGenerator name="add_from_current" dihedral="omega" residue_selector="peptide" dihedral_angle="180" />
+        </AddConstraints>
+        <CrosslinkerMover name="cyclize1" linker_name="lanthionine"
+            residue_selector="lan1" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="true"
+        />
+        <CrosslinkerMover name="cyclize_nomin1" linker_name="lanthionine"
+            residue_selector="lan1" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="false"
+        />
+        <CrosslinkerMover name="cyclize2" linker_name="lanthionine"
+            residue_selector="lan2" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="true"
+        />
+        <CrosslinkerMover name="cyclize_nomin2" linker_name="lanthionine"
+            residue_selector="lan2" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="false"
+        />
+        <CrosslinkerMover name="cyclize3" linker_name="lanthionine"
+            residue_selector="lan3" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="true"
+        />
+        <CrosslinkerMover name="cyclize_nomin3" linker_name="lanthionine"
+            residue_selector="lan3" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="false"
+        />
+        <CrosslinkerMover name="cyclize4" linker_name="lanthionine"
+            residue_selector="lan4" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="true"
+        />
+        <CrosslinkerMover name="cyclize_nomin4" linker_name="lanthionine"
+            residue_selector="lan4" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="false"
+        />
+        <GeneralizedKIC name="genkic_1" closure_attempts="100"
+            stop_when_n_solutions_found="1" 
+            selector="lowest_energy_selector" selector_scorefunction="r15_cst">
+            <AddResidue res_index="%%piv1_1%%" />
+            <AddResidue res_index="%%int1_1%%" />
+            <AddResidue res_index="%%int1_2%%" />
+            <AddResidue res_index="%%int1_3%%" />
+            <AddResidue res_index="%%piv1_3%%" />
+            <AddTailResidue res_index="%%tail1_1%%" />
+            <AddTailResidue res_index="%%tail1_2%%" />
+            <AddTailResidue res_index="%%tail1_3%%" />
+            <AddTailResidue res_index="%%tail1_4%%" />
+            <AddTailResidue res_index="%%tail1_5%%" />
+            <AddTailResidue res_index="%%tail1_6%%" />
+            <AddTailResidue res_index="%%tail1_7%%" />
+            <AddTailResidue res_index="%%tail1_8%%" />
+            <AddTailResidue res_index="%%tail1_9%%" />
+            <AddTailResidue res_index="%%tail1_10%%" />
+            <AddTailResidue res_index="%%tail1_11%%" />
+            <AddTailResidue res_index="%%tail1_12%%" />
+            <AddTailResidue res_index="%%tail1_13%%" />
+            <SetPivots res1="%%piv1_1%%" res2="%%piv1_2%%" res3="%%piv1_3%%" atom1="CA" atom2="CA" atom3="CA" /> #first pivot must be second atom in chain, last is 2nd to last
+            <CloseBond res1="%%lan_st1%%" atom1="CB" res2="%%lan_end1%%" atom2="SG" bondlength="1.807" angle2="115.230" angle1="103.176" />
+        </GeneralizedKIC>
+        <ParsedProtocol name="genkic_steps1">
+            <Add mover="genkic_1" />
+            <Add mover="findbrk" />
+            <Add mover="init_frlx" />
+        </ParsedProtocol>
+        <GeneralizedKIC name="genkic_2" closure_attempts="100"
+            stop_when_n_solutions_found="1" 
+            selector="lowest_energy_selector" selector_scorefunction="r15_cst">
+            <AddResidue res_index="%%piv2_1%%" />
+            <AddResidue res_index="%%int2_1%%" />
+            <AddResidue res_index="%%int2_2%%" />
+            <AddResidue res_index="%%int2_3%%" />
+            <AddResidue res_index="%%int2_4%%" />
+            <AddResidue res_index="%%int2_5%%" />
+            <AddResidue res_index="%%int2_6%%" />
+            <AddResidue res_index="%%piv2_3%%" />
+            <AddTailResidue res_index="%%tail2_1%%" />
+            <AddTailResidue res_index="%%tail2_2%%" />
+            <AddTailResidue res_index="%%tail2_3%%" />
+            <AddTailResidue res_index="%%tail2_4%%" />
+            <AddTailResidue res_index="%%tail2_5%%" />
+            <AddTailResidue res_index="%%tail2_6%%" />
+            <SetPivots res1="%%piv2_1%%" res2="%%piv2_2%%" res3="%%piv2_3%%" atom1="CA" atom2="CA" atom3="CA" /> #first pivot must be second atom in chain, last is 2nd to last
+            <CloseBond res1="%%lan_st2%%" atom1="CB" res2="%%lan_end2%%" atom2="SG" bondlength="1.807" angle2="115.230" angle1="103.176" />
+        </GeneralizedKIC>
+        <ParsedProtocol name="genkic_steps2">
+            <Add mover="genkic_2" />
+            <Add mover="findbrk" />
+            <Add mover="init_frlx" />
+        </ParsedProtocol>
+        <GeneralizedKIC name="genkic_3" closure_attempts="100"
+            stop_when_n_solutions_found="1" 
+            selector="lowest_energy_selector" selector_scorefunction="r15_cst">
+            <AddResidue res_index="%%piv3_1%%" />
+            <AddResidue res_index="%%int3_1%%" />
+            <AddResidue res_index="%%int3_2%%" />
+            <AddResidue res_index="%%piv3_3%%" />
+            <SetPivots res1="%%piv3_1%%" res2="%%piv3_2%%" res3="%%piv3_3%%" atom1="CA" atom2="CA" atom3="CA" /> #first pivot must be second atom in chain, last is 2nd to last
+            <CloseBond res1="%%lan_st3%%" atom1="CB" res2="%%lan_end3%%" atom2="SG" bondlength="1.807" angle2="115.230" angle1="103.176" />
+        </GeneralizedKIC>
+        <ParsedProtocol name="genkic_steps3">
+            <Add mover="genkic_3" />
+            <Add mover="findbrk" />
+            <Add mover="init_frlx" />
+        </ParsedProtocol>
+        <GeneralizedKIC name="genkic_4" closure_attempts="100"
+            stop_when_n_solutions_found="1" 
+            selector="lowest_energy_selector" selector_scorefunction="r15_cst">
+            <AddResidue res_index="%%piv4_1%%" />
+            <AddResidue res_index="%%int4_1%%" />
+            <AddResidue res_index="%%int4_2%%" />
+            <AddResidue res_index="%%int4_3%%" />
+            <AddResidue res_index="%%int4_4%%" />
+            <AddResidue res_index="%%piv4_3%%" />
+            <SetPivots res1="%%piv4_1%%" res2="%%piv4_2%%" res3="%%piv4_3%%" atom1="CA" atom2="CA" atom3="CA" /> #first pivot must be second atom in chain, last is 2nd to last
+            <CloseBond res1="%%lan_st4%%" atom1="CB" res2="%%lan_end4%%" atom2="SG" bondlength="1.807" angle2="115.230" angle1="103.176" />
+        </GeneralizedKIC>
+        <ParsedProtocol name="genkic_steps4">
+            <Add mover="genkic_4" />
+            <Add mover="findbrk" />
+            <Add mover="init_frlx" />
+        </ParsedProtocol>
+        <AtomTree name="new_tree" simple_ft="1" /> 
+        <DeclareBond name="termini2" atom1="C" res1="1" atom2="N" res2="2" add_termini="false" /> 
+        <DeclareBond name="termini3" atom1="C" res1="2" atom2="N" res2="3" add_termini="false" /> 
+        <DeclareBond name="termini4" atom1="C" res1="3" atom2="N" res2="4" add_termini="false" /> 
+        <DeclareBond name="termini5" atom1="C" res1="4" atom2="N" res2="5" add_termini="false" /> 
+        <DeclareBond name="termini6" atom1="C" res1="5" atom2="N" res2="6" add_termini="false" /> 
+        <DeclareBond name="termini7" atom1="C" res1="6" atom2="N" res2="7" add_termini="false" /> 
+        <DeclareBond name="termini8" atom1="C" res1="7" atom2="N" res2="8" add_termini="false" /> 
+        <DeclareBond name="termini9" atom1="C" res1="8" atom2="N" res2="9" add_termini="false" /> 
+        <DeclareBond name="termini10" atom1="C" res1="9" atom2="N" res2="10" add_termini="false" /> 
+        <DeclareBond name="termini11" atom1="C" res1="10" atom2="N" res2="11" add_termini="false" /> 
+        <DeclareBond name="termini12" atom1="C" res1="11" atom2="N" res2="12" add_termini="false" /> 
+        <DeclareBond name="termini13" atom1="C" res1="12" atom2="N" res2="13" add_termini="false" /> 
+        <DeclareBond name="termini14" atom1="C" res1="13" atom2="N" res2="14" add_termini="false" /> 
+        <DeclareBond name="termini15" atom1="C" res1="14" atom2="N" res2="15" add_termini="false" /> 
+        <DeclareBond name="termini16" atom1="C" res1="15" atom2="N" res2="16" add_termini="false" /> 
+        <DeclareBond name="termini17" atom1="C" res1="16" atom2="N" res2="17" add_termini="false" /> 
+        <DeclareBond name="termini18" atom1="C" res1="17" atom2="N" res2="18" add_termini="false" /> 
+        <DeclareBond name="termini19" atom1="C" res1="18" atom2="N" res2="19" add_termini="false" /> 
+        <ParsedProtocol name="fix_peptide_bond">
+            <Add mover="termini2" />
+            <Add mover="termini3" />
+            <Add mover="termini4" />
+            <Add mover="termini5" />
+            <Add mover="termini6" />
+            <Add mover="termini7" />
+            <Add mover="termini8" />
+            <Add mover="termini9" />
+            <Add mover="termini10" />
+            <Add mover="termini11" />
+            <Add mover="termini12" />
+            <Add mover="termini13" />
+            <Add mover="termini14" />
+            <Add mover="termini15" />
+            <Add mover="termini16" />
+            <Add mover="termini17" />
+            <Add mover="termini18" />
+            <Add mover="termini19" />
+        </ParsedProtocol>
+        <ConstraintSetMover name="add_cst" add_constraints="true" cst_file="6PQG.cst"/>
+        <ConstraintSetMover name="add_6PQG_nmr_cst" add_constraints="true" cst_file="6PQG_noe.cst"/>
+        <ClearConstraintsMover name="rm_cst" />
+        <MinMover name="cart_min" cartesian="true" bondlength="0" bondangle="1" bb="false" omega="false" chi="true" scorefxn="r15_cart" />
+    </MOVERS>
+    <PROTOCOLS>
+        <Add mover="cyclize1" />
+        <Add mover="cyclize2" />
+        <Add mover="cyclize3" />
+        <Add mover="cyclize4" />
+        <Add mover="ramarand_pep" />
+        <Add mover="add_omega_cst" />
+        <Add mover="genkic_steps1" />
+        <Add mover="genkic_steps2" />
+        <Add mover="genkic_steps3" />
+        <Add mover="genkic_steps4" />
+        <Add mover="init_frlx" />
+        <Add mover="findbrk" />
+        <Add mover="rm_cst" />
+        <Add mover="cyclize1" />
+        <Add mover="cyclize2" />
+        <Add mover="cyclize3" />
+        <Add mover="cyclize4" />
+        <Add mover="fix_peptide_bond" />
+        <Add mover="init_frlx" />
+        <Add mover="new_tree" />
+        <Add mover="fix_peptide_bond" />
+        <Add mover="fix_peptide_bond" />
+        <Add mover="rm_cst" />
+        <Add mover="cyclize1" />
+        <Add mover="cyclize2" />
+        <Add mover="cyclize3" />
+        <Add mover="cyclize4" />
+        <Add mover="findbrk" />
+        <Add mover="final_frlx" />
+        <Add filter="chainbrk" />
+        <Add mover="rm_cst" />
+        <Add mover="add_6PQG_nmr_cst" />
+        <Add metrics="cst_eng" labels="nmr_cst"/>
+        <Add metrics="ring1_nmr,ring2_nmr,ring3_nmr,ring4_nmr" labels="ring1_nmr,ring2_nmr,ring3_nmr,ring4_nmr"/>
+        <Add mover="rm_cst" />
+        <Add mover="cyclize1" />
+        <Add mover="cyclize2" />
+        <Add mover="cyclize3" />
+        <Add mover="cyclize4" />
+        <Add mover="cart_min" />
+        <Add metrics="calc_rmsd_full" labels="rmsd_full"/>
+        <Add metrics="calc_rmsd_bb" labels="rmsd_bb"/>
+        <Add metrics="SASA" labels="SASA"/>
+        <Add metrics="ring1_dih,ring1_eng,ring1_hbond,ring1_rmsd_full,ring1_rmsd_bb,ring2_dih,ring2_eng,ring2_hbond,ring2_rmsd_full,ring2_rmsd_bb,ring3_dih,ring3_eng,ring3_hbond,ring3_rmsd_full,ring3_rmsd_bb,ring4_dih,ring4_eng,ring4_hbond,ring4_rmsd_full,ring4_rmsd_bb" labels="ring1_dih,ring1_eng,ring1_hbond,ring1_rmsd_full,ring1_rmsd_bb,ring2_dih,ring2_eng,ring2_hbond,ring2_rmsd_full,ring2_rmsd_bb,ring3_dih,ring3_eng,ring3_hbond,ring3_rmsd_full,ring3_rmsd_bb,ring4_dih,ring4_eng,ring4_hbond,ring4_rmsd_full,ring4_rmsd_bb"/>
+        <Add metrics="eng_no_cst" labels="eng_no_cst" />
+    </PROTOCOLS>
+    <OUTPUT scorefxn="r15_cst" />
+</ROSETTASCRIPTS>

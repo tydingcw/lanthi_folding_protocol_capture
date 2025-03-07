@@ -1,0 +1,15 @@
+../../renamed_pdb/8CWX_10_rename.pdb
+../../renamed_pdb/8CWX_11_rename.pdb
+../../renamed_pdb/8CWX_12_rename.pdb
+../../renamed_pdb/8CWX_13_rename.pdb
+../../renamed_pdb/8CWX_14_rename.pdb
+../../renamed_pdb/8CWX_15_rename.pdb
+../../renamed_pdb/8CWX_1_rename.pdb
+../../renamed_pdb/8CWX_2_rename.pdb
+../../renamed_pdb/8CWX_3_rename.pdb
+../../renamed_pdb/8CWX_4_rename.pdb
+../../renamed_pdb/8CWX_5_rename.pdb
+../../renamed_pdb/8CWX_6_rename.pdb
+../../renamed_pdb/8CWX_7_rename.pdb
+../../renamed_pdb/8CWX_8_rename.pdb
+../../renamed_pdb/8CWX_9_rename.pdb

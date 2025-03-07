@@ -1,0 +1,36 @@
+REMARK TALOS-N Protein Chi1 Conformation Prediction Table
+REMARK  Prediction Summary for Chemical Shift Input bmr30702_3.str.txt
+REMARK 
+REMARK  Q_Gm is the probability to be with a g- (gauche-) rotamer.
+REMARK  Q_Gp is the probability to be with a g+ (gauche+) rotamer.
+REMARK  Q_t  is the probability to be with a t  (trans)   rotamer.
+REMARK 
+REMARK  CS_COUNT is the number of chemical shifts in the query triplets
+REMARK  used to predict chi1 conformation.
+REMARK 
+REMARK  CLASS is the classification of the prediction result:
+REMARK    na: no chi1 prediction was made.
+REMARK    g-/g+/t: 3-state chi1 prediction
+REMARK 
+REMARK Reference:
+REMARK  Y. Shen, and A. Bax:
+REMARK  Protein backbone and sidechain torsion angles predicted from 
+REMARK  NMR chemical shifts using artificial neural networks
+REMARK  J. Biomol. NMR, 56, 227-241(2013).
+REMARK 
+REMARK  TALOS-N Version 4.12 Rev 2023.083.11.36 TALOSN_INFO
+
+
+VARS   RESID RESNAME CS_COUNT Q_Gm Q_Gp Q_T CLASS CHI1 DCHI1 
+FORMAT %4d %s %2d %5.3f %5.3f %5.3f  %-2s %6.1f %6.1f
+
+   5 C 10 0.518 0.305 0.176  na 9999.0 9999.0
+   6 F 10 0.676 0.024 0.300  g-  -71.7   14.2
+   8 I 10 0.847 0.051 0.102  g-  -66.5    5.3
+  10 L 12 0.633 0.041 0.326  g-  -71.4   10.1
+  12 V 13 0.073 0.055 0.872  t   173.7    6.0
+  15 L 15 0.562 0.040 0.399  na 9999.0 9999.0
+  16 F 13 0.460 0.020 0.520  na 9999.0 9999.0
+  19 K 15 0.671 0.101 0.228  g-  -64.7    9.5
+  20 F 13 0.910 0.030 0.060  g-  -69.7   12.3
+  21 C  8 0.333 0.333 0.333  na 9999.0 9999.0

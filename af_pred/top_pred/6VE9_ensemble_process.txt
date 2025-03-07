@@ -1,0 +1,12 @@
+6VE9/sample_6VE9_2_0358.pdb.gz
+6VE9/sample_6VE9_3_0335.pdb.gz
+6VE9/sample_6VE9_3_0976.pdb.gz
+6VE9/sample_6VE9_0_0528.pdb.gz
+6VE9/sample_6VE9_3_0157.pdb.gz
+6VE9/sample_6VE9_0_0004.pdb.gz
+6VE9/sample_6VE9_0_0322.pdb.gz
+6VE9/sample_6VE9_0_0106.pdb.gz
+6VE9/sample_6VE9_0_0930.pdb.gz
+6VE9/sample_6VE9_2_0762.pdb.gz
+6VE9/sample_6VE9_0_0737.pdb.gz
+6VE9/sample_6VE9_0_0628.pdb.gz

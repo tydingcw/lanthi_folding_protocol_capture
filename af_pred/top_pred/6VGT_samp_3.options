@@ -1,0 +1,17 @@
+-parser:protocol sample_6vgt_af.xml
+#-in:file:s /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/renamed_pdb/7JVF_1_rename.pdb
+-in:file:s 6VGT_3.pdb
+-in:file:native /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/renamed_pdb/6VGT_1_rename.pdb
+-nstruct 1000
+-out:file:scorefile 6VGT_af_sample.sc
+-use_input_sc true
+-in:file:fullatom
+-ignore_zero_occupancy false
+-linmem_ig 10
+-out:pdb_gz
+-out:prefix 6VGT/sample_
+-in:detect_disulf false
+-in:file:extra_res_path /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/NCAA/uff_params/final_params/
+-in:file:extra_res_cen /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/af_pred/top_pred/params/DBU.params
+-in:file:extra_res_cen /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/af_pred/top_pred/params/DHA.params
+#-parser:script_vars start=1 end=21 ring_st1=7 ring_end1=12 ring_st2=10 ring_end2=19 lan_st1=7 lan_end1=12 type1=lanthionine lan_st2=10 lan_end2=19 type2=methyllanthionine piv1_1=9 int1_1=10 int1_2=11 int1_3=12 piv1_3=7 tail1_1=1 tail1_2=2 tail1_3=3 tail1_4=4 tail1_5=5 tail1_6=6 tail1_7=13 tail1_8=14 tail1_9=15 tail1_10=16 tail1_11=17 tail1_12=18 tail1_13=19 tail1_14=20 tail1_15=21 piv1_2=11 piv2_1=12 int2_1=13 int2_2=14 int2_3=15 int2_4=16 int2_5=17 int2_6=18 int2_7=19 piv2_3=10 tail2_1=1 tail2_2=2 tail2_3=3 tail2_4=4 tail2_5=5 tail2_6=6 tail2_7=7 tail2_8=8 tail2_9=9 tail2_10=20 tail2_11=21 piv2_2=16 

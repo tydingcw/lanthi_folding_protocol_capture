@@ -1,0 +1,36 @@
+REMARK Secondary Structure Prediction for Chemical Shift Input bmr30712_3_6vhj_edit.str.txt
+ 
+REMARK     H-Helix    E-Strand   L-Coil (Chemical shift based)
+REMARK     h-Helix    e-Strand   c-Coil (Sequence based)
+ 
+REMARK Reference:
+REMARK  Y. Shen, and A. Bax:
+REMARK  Protein backbone and sidechain torsion angles predicted from NMR
+REMARK  chemical shifts using artificial neural networks
+REMARK  J. Biomol. NMR, 56, 227-241(2013).
+ 
+DATA FIRST_RESID 1
+ 
+DATA SEQUENCE     FFCVQGCANR FCINVC
+DATA PREDICTED_SS ccececchhh heeecc
+DATA CONFIDENCE   7121020112 032069
+
+VARS RESID RESNAME CS_CNT CS_CNT_R2 Q_H Q_E Q_L CONFIDENCE SS_CLASS
+FORMAT %4d %1s %2d %2d %8.3f %8.3f %8.3f %4.2f %s
+
+    1 F  2  0    0.040    0.103    0.857 0.75 c
+    2 F  3  2    0.043    0.388    0.569 0.18 c
+    3 C  5  1    0.082    0.595    0.323 0.27 e
+    4 V  5  2    0.220    0.291    0.488 0.20 c
+    5 Q  6  2    0.363    0.366    0.271 0.00 e
+    6 G  6  2    0.227    0.278    0.495 0.22 c
+    7 C  6  2    0.335    0.245    0.420 0.08 c
+    8 A  6  2    0.421    0.280    0.300 0.12 h
+    9 N  6  2    0.470    0.230    0.300 0.17 h
+   10 R  6  2    0.474    0.256    0.270 0.20 h
+   11 F  6  2    0.398    0.374    0.228 0.02 h
+   12 C  6  2    0.261    0.564    0.175 0.30 e
+   13 I  6  2    0.224    0.515    0.261 0.25 e
+   14 N  6  2    0.252    0.401    0.348 0.05 e
+   15 V  6  2    0.093    0.134    0.773 0.64 c
+   16 C  4  2    0.000    0.021    0.979 0.96 c

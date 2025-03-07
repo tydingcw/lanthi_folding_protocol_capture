@@ -1,0 +1,1 @@
+DAB - this will be DBR and DBS when using crosslinker (DBB in NMR structures)

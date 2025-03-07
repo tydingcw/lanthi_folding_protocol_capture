@@ -1,0 +1,21 @@
+REMARK  Predicted order parameter (S2) from backbone chemical shifts for bmr30712_3_6vhj_edit.str.txt
+REMARK    from David Wishart's RCI method, JACS, 127(43), 14970-14971
+
+VARS RESID RESNAME CS_CNT CS_CNT_R2 S2 
+FORMAT %4d %1s %2d %2d %8.3f 
+
+    2 F  3  2    0.384
+    3 C  5  1    0.476
+    4 V  5  2    0.607
+    5 Q  6  2    0.607
+    6 G  6  2    0.628
+    7 C  6  2    0.595
+    8 A  6  2    0.502
+    9 N  6  2    0.418
+   10 R  6  2    0.400
+   11 F  6  2    0.431
+   12 C  6  2    0.447
+   13 I  6  2    0.376
+   14 N  6  2    0.278
+   15 V  6  2    0.202
+   16 C  4  2    0.165

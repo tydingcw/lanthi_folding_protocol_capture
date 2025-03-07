@@ -1,0 +1,1 @@
+/home/tydingcw/BCL/bcl/build/linux64_release/bin/bcl-apps-static.exe molecule:ConformerGenerator -conformation_comparer SymmetryRMSD 0.25 -max_iterations 2000 -top_models 1000 -cluster -ensemble_filenames dipeptide_sdf/DAB_3D_0.sdf -conformers_single_file conformers_sdf/DAB_3D_0_Rotamer.sdf -explicit_aromaticity

@@ -1,0 +1,15 @@
+../../renamed_pdb/1AJ1_10_rename.pdb
+../../renamed_pdb/1AJ1_11_rename.pdb
+../../renamed_pdb/1AJ1_12_rename.pdb
+../../renamed_pdb/1AJ1_13_rename.pdb
+../../renamed_pdb/1AJ1_14_rename.pdb
+../../renamed_pdb/1AJ1_15_rename.pdb
+../../renamed_pdb/1AJ1_1_rename.pdb
+../../renamed_pdb/1AJ1_2_rename.pdb
+../../renamed_pdb/1AJ1_3_rename.pdb
+../../renamed_pdb/1AJ1_4_rename.pdb
+../../renamed_pdb/1AJ1_5_rename.pdb
+../../renamed_pdb/1AJ1_6_rename.pdb
+../../renamed_pdb/1AJ1_7_rename.pdb
+../../renamed_pdb/1AJ1_8_rename.pdb
+../../renamed_pdb/1AJ1_9_rename.pdb

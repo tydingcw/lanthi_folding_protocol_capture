@@ -1,0 +1,21 @@
+score: 457.8940937725671
+8CWX/sample_8CWX_3_0151.pdb.gz
+8CWX/sample_8CWX_3_0358.pdb.gz
+8CWX/sample_8CWX_2_0144.pdb.gz
+8CWX/sample_8CWX_2_0760.pdb.gz
+8CWX/sample_8CWX_1_0340.pdb.gz
+8CWX/sample_8CWX_1_0591.pdb.gz
+8CWX/sample_8CWX_1_0763.pdb.gz
+8CWX/sample_8CWX_2_0863.pdb.gz
+8CWX/sample_8CWX_3_0493.pdb.gz
+8CWX/sample_8CWX_2_0443.pdb.gz
+8CWX/sample_8CWX_2_0478.pdb.gz
+8CWX/sample_8CWX_1_0441.pdb.gz
+8CWX/sample_8CWX_3_0924.pdb.gz
+8CWX/sample_8CWX_3_0582.pdb.gz
+8CWX/sample_8CWX_2_0915.pdb.gz
+8CWX/sample_8CWX_3_0754.pdb.gz
+8CWX/sample_8CWX_0_0653.pdb.gz
+8CWX/sample_8CWX_3_0816.pdb.gz
+8CWX/sample_8CWX_3_0535.pdb.gz
+8CWX/sample_8CWX_3_0867.pdb.gz

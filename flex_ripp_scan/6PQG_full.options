@@ -1,0 +1,12 @@
+-parser:protocol relax_6PQG_full.xml
+-in:file:native /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/renamed_pdb//6PQG_1_rename.pdb
+-nstruct 20
+-out:file:scorefile 6PQG_full_relax.sc
+-use_input_sc true
+-in:file:fullatom
+-ignore_zero_occupancy false
+-linmem_ig 10
+-out:pdb_gz
+-out:prefix 6PQG_native/full_
+-in:detect_disulf false
+-in:file:extra_res_path /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/NCAA/uff_params/final_params/

@@ -1,0 +1,105 @@
+BLASTP 2.2.18 [Mar-02-2008]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 6VE9_1|Chain A|enterococcal cytolysin S|Enterococcus faecalis
+(1351)
+         (21 letters)
+
+Database: filtnr 
+           15,322,545 sequences; 5,254,608,391 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gi|29375150|ref|NP_814303.1| cylL-S protein [Enterococcus faecal...    39   0.18 
+gi|307272300|ref|ZP_07553559.1| CylL-S family protein [Enterococ...    39   0.26 
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+Sequences not found previously or not previously below threshold:
+
+gi|29375150|ref|NP_814303.1| cylL-S protein [Enterococcus faecal...    39   0.27 
+gi|307272300|ref|ZP_07553559.1| CylL-S family protein [Enterococ...    35   3.2  
+
+
+CONVERGED!
+  Database: filtnr
+    Posted date:  Sep 19, 2011  1:36 PM
+  Number of letters in database: 1,740,938,412
+  Number of sequences in database:  5,131,667
+  
+  Database: /sb/meilerapps/scripts/sequence_analysis/db/filtnr.01
+    Posted date:  Sep 19, 2011  1:42 PM
+  Number of letters in database: 2,285,224,685
+  Number of sequences in database:  6,711,192
+  
+  Database: /sb/meilerapps/scripts/sequence_analysis/db/filtnr.02
+    Posted date:  Sep 19, 2011  1:45 PM
+  Number of letters in database: 1,228,445,294
+  Number of sequences in database:  3,479,686
+  
+Lambda     K      H
+   0.335    0.153    0.538 
+
+Lambda     K      H
+   0.267   0.0502    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 514,324,200
+Number of Sequences: 15322545
+Number of extensions: 7483451
+Number of successful extensions: 38581
+Number of sequences better than 10.0: 2
+Number of HSP's better than 10.0 without gapping: 4
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 38577
+Number of HSP's gapped (non-prelim): 4
+length of query: 21
+length of database: 5,254,608,391
+effective HSP length: 0
+effective length of query: 21
+effective length of database: 5,254,608,391
+effective search space: 110346776211
+effective search space used: 110346776211
+T: 11
+A: 40
+X1: 16 ( 7.7 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 39 (21.5 bits)
+S2: 76 (33.6 bits)

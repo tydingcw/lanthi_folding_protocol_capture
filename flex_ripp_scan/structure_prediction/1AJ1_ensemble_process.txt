@@ -1,0 +1,11 @@
+1AJ1/5505_run1_1AJ1_1_rename_0160.pdb.gz
+1AJ1/2324_run1_1AJ1_1_rename_0141.pdb.gz
+1AJ1/9778_run1_1AJ1_1_rename_0081.pdb.gz
+1AJ1/1059_run1_1AJ1_1_rename_0190.pdb.gz
+1AJ1/6314_init_1AJ1_1_rename_0083.pdb.gz
+1AJ1/254_init_1AJ1_1_rename_0032.pdb.gz
+1AJ1/7340_init_1AJ1_1_rename_0004.pdb.gz
+1AJ1/6984_run1_1AJ1_1_rename_0116.pdb.gz
+1AJ1/1340_init_1AJ1_1_rename_0043.pdb.gz
+1AJ1/1564_run1_1AJ1_1_rename_0182.pdb.gz
+1AJ1/2873_run1_1AJ1_1_rename_0109.pdb.gz

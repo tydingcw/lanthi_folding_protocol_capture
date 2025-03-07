@@ -1,0 +1,88 @@
+BLASTP 2.2.18 [Mar-02-2008]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= 8CWX_1|Chain A|Lanthipeptide Natural Product
+mSmoAc|Streptomyces morookaense (1970)
+         (28 letters)
+
+Database: nr 
+           15,322,545 sequences; 5,254,608,391 total letters
+
+Searching..................................................done
+
+
+
+ ***** No hits found ******
+
+Searching..................................................done
+
+
+
+ ***** No hits found ******
+
+  Database: nr
+    Posted date:  Sep 19, 2011  1:50 PM
+  Number of letters in database: 1,740,938,412
+  Number of sequences in database:  5,131,667
+  
+  Database: /sb/meilerapps/scripts/sequence_analysis/db/nr.01
+    Posted date:  Sep 19, 2011  1:56 PM
+  Number of letters in database: 2,285,224,685
+  Number of sequences in database:  6,711,192
+  
+  Database: /sb/meilerapps/scripts/sequence_analysis/db/nr.02
+    Posted date:  Sep 19, 2011  1:59 PM
+  Number of letters in database: 1,228,445,294
+  Number of sequences in database:  3,479,686
+  
+Lambda     K      H
+   0.326    0.137    0.510 
+
+Lambda     K      H
+   0.267   0.0428    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 723,623,070
+Number of Sequences: 15322545
+Number of extensions: 11266124
+Number of successful extensions: 34825
+Number of sequences better than 9.0e-04: 0
+Number of HSP's better than  0.0 without gapping: 0
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 34825
+Number of HSP's gapped (non-prelim): 0
+length of query: 28
+length of database: 5,254,608,391
+effective HSP length: 3
+effective length of query: 25
+effective length of database: 5,208,640,756
+effective search space: 130216018900
+effective search space used: 130216018900
+T: 11
+A: 40
+X1: 16 ( 7.5 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (21.7 bits)
+S2: 111 (47.3 bits)

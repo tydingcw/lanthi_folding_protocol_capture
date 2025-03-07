@@ -1,0 +1,55 @@
+REMARK Conversion of BMRB NMR-Star Version 3 Format Chemical Shifts
+REMARK TALOS-N Protein Secondary Chemical Shift Table for bmr30713_3_7jvf_edit.str.txt
+REMARK 
+REMARK  SHIFT is secondary chemical shift
+REMARK 
+REMARK  CS_OBS is the original chemical shift
+REMARK 
+REMARK  CS_ADJ is the adjustment used to calculate SHIFT.
+REMARK 
+REMARK  TALOS-N Version 4.12 Rev 2023.083.11.36 TALOSN_INFO
+
+DATA FIRST_RESID 1
+DATA SEQUENCE AGGAIPCLMC GCGWLAGLCV R
+
+VARS   RESID RESNAME ATOMNAME SHIFT CS_OBS CS_ADJ 
+FORMAT %4d %1s %4s %8.3f %9.3f %9.3f
+
+   1 A   HA   -0.127     4.193     4.320
+   2 G   HA    0.114     4.074     3.960
+   2 G   HN    0.304     8.594     8.290
+   3 G   HA    0.138     4.098     3.960
+   3 G   HN    0.042     8.332     8.290
+   4 A   HN    1.097     9.247     8.150
+   5 I   HA    0.350     4.520     4.170
+   5 I   HN   -0.547     7.663     8.210
+   6 P   HA    0.023     4.443     4.420
+   7 C   HA   -0.118     4.342     4.460
+   7 C   HN    0.278     8.508     8.230
+   8 L   HA   -0.012     4.328     4.340
+   8 L   HN   -0.503     7.727     8.230
+   9 M   HA    0.072     4.552     4.480
+   9 M   HN   -0.124     8.166     8.290
+  10 C   HA    0.272     4.732     4.460
+  10 C   HN   -0.468     7.762     8.230
+  11 G   HA    0.013     3.974     3.960
+  11 G   HN    0.079     8.369     8.290
+  12 C   HA    0.012     4.472     4.460
+  12 C   HN   -0.390     7.840     8.230
+  13 G   HA   -0.103     3.857     3.960
+  13 G   HN    0.154     8.444     8.290
+  14 W   HA    0.070     4.730     4.660
+  14 W   HN   -0.426     7.754     8.180
+  15 L   HA    0.018     4.358     4.340
+  15 L   HN   -0.371     7.859     8.230
+  16 A   HN    0.735     8.885     8.150
+  17 G   HA   -0.060     3.900     3.960
+  17 G   HN   -0.344     7.946     8.290
+  18 L   HA    0.004     4.344     4.340
+  18 L   HN   -0.435     7.795     8.230
+  19 C   HA    0.119     4.579     4.460
+  19 C   HN   -0.196     8.034     8.230
+  20 V   HA    0.033     4.153     4.120
+  20 V   HN   -0.344     7.846     8.190
+  21 R   HA    0.035     4.375     4.340
+  21 R   HN   -0.066     8.204     8.270

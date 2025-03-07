@@ -1,0 +1,26 @@
+<ROSETTASCRIPTS>
+    <RESIDUE_SELECTORS>
+	<Index name="seg1-12" resnums="1-12"/>
+	<Index name="seg1-5" resnums="1-5"/>
+    </RESIDUE_SELECTORS>
+    <SIMPLE_METRICS>
+        <DihedralDistanceMetric name="seg1-12_dih" use_native="true" residue_selector="seg1-12"/>
+        <TotalEnergyMetric name="seg1-12_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="seg1-12"/>
+        <PeptideInternalHbondsMetric name="seg1-12_hbond" residue_selector="seg1-12"/>
+        <TotalEnergyMetric name="seg1-12_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="seg1-12"/>
+        <RMSDMetric name="seg1-12_rmsd_full" residue_selector="seg1-12" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="seg1-12_rmsd_bb" residue_selector="seg1-12" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="seg1-5_dih" use_native="true" residue_selector="seg1-5"/>
+        <TotalEnergyMetric name="seg1-5_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="seg1-5"/>
+        <PeptideInternalHbondsMetric name="seg1-5_hbond" residue_selector="seg1-5"/>
+        <TotalEnergyMetric name="seg1-5_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="seg1-5"/>
+        <RMSDMetric name="seg1-5_rmsd_full" residue_selector="seg1-5" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="seg1-5_rmsd_bb" residue_selector="seg1-5" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+    </SIMPLE_METRICS>
+    <PROTOCOLS>
+        <Add metrics="seg1-12_nmr" labels="seg1-12_nmr"/>
+        <Add metrics="seg1-5_nmr" labels="seg1-5_nmr"/>
+        <Add metrics="seg1-12_dih,seg1-12_eng,seg1-12_hbond,seg1-12_rmsd_full,seg1-12_rmsd_bb" labels="seg1-12_dih,seg1-12_eng,seg1-12_hbond,seg1-12_rmsd_full,seg1-12_rmsd_bb"/>
+        <Add metrics="seg1-5_dih,seg1-5_eng,seg1-5_hbond,seg1-5_rmsd_full,seg1-5_rmsd_bb" labels="seg1-5_dih,seg1-5_eng,seg1-5_hbond,seg1-5_rmsd_full,seg1-5_rmsd_bb"/>
+    </PROTOCOLS>
+</ROSETTASCRIPTS>

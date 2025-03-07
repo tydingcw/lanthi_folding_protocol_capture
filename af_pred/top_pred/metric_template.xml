@@ -1,0 +1,44 @@
+<ROSETTASCRIPTS>
+    <RESIDUE_SELECTORS>
+	<Index name="ring1" resnums="1-5"/>
+	<Index name="ring2" resnums="2-22"/>
+	<Index name="ring3" resnums="23-31"/>
+	<Index name="ring4" resnums="28-31"/>
+    </RESIDUE_SELECTORS>
+    <SIMPLE_METRICS>
+        <DihedralDistanceMetric name="ring1_dih" use_native="true" residue_selector="ring1"/>
+        <TotalEnergyMetric name="ring1_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="ring1"/>
+        <PeptideInternalHbondsMetric name="ring1_hbond" residue_selector="ring1"/>
+        <TotalEnergyMetric name="ring1_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring1"/>
+        <RMSDMetric name="ring1_rmsd_full" residue_selector="ring1" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring1_rmsd_bb" residue_selector="ring1" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="ring2_dih" use_native="true" residue_selector="ring2"/>
+        <TotalEnergyMetric name="ring2_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="ring2"/>
+        <PeptideInternalHbondsMetric name="ring2_hbond" residue_selector="ring2"/>
+        <TotalEnergyMetric name="ring2_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring2"/>
+        <RMSDMetric name="ring2_rmsd_full" residue_selector="ring2" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring2_rmsd_bb" residue_selector="ring2" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="ring3_dih" use_native="true" residue_selector="ring3"/>
+        <TotalEnergyMetric name="ring3_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="ring3"/>
+        <PeptideInternalHbondsMetric name="ring3_hbond" residue_selector="ring3"/>
+        <TotalEnergyMetric name="ring3_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring3"/>
+        <RMSDMetric name="ring3_rmsd_full" residue_selector="ring3" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring3_rmsd_bb" residue_selector="ring3" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="ring4_dih" use_native="true" residue_selector="ring4"/>
+        <TotalEnergyMetric name="ring4_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="ring4"/>
+        <PeptideInternalHbondsMetric name="ring4_hbond" residue_selector="ring4"/>
+        <TotalEnergyMetric name="ring4_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring3"/>
+        <RMSDMetric name="ring4_rmsd_full" residue_selector="ring4" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring4_rmsd_bb" residue_selector="ring4" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+    </SIMPLE_METRICS>
+    <PROTOCOLS>
+        <Add metrics="ring1_nmr" labels="ring1_nmr"/>
+        <Add metrics="ring2_nmr" labels="ring2_nmr"/>
+        <Add metrics="ring3_nmr" labels="ring3_nmr"/>
+        <Add metrics="ring4_nmr" labels="ring4_nmr"/>
+        <Add metrics="ring1_dih,ring1_eng,ring1_hbond,ring1_rmsd_full,ring1_rmsd_bb" labels="ring1_dih,ring1_eng,ring1_hbond,ring1_rmsd_full,ring1_rmsd_bb"/>
+        <Add metrics="ring2_dih,ring2_eng,ring2_hbond,ring2_rmsd_full,ring2_rmsd_bb" labels="ring2_dih,ring2_eng,ring2_hbond,ring2_rmsd_full,ring2_rmsd_bb"/>
+        <Add metrics="ring3_dih,ring3_eng,ring3_hbond,ring3_rmsd_full,ring3_rmsd_bb" labels="ring3_dih,ring3_eng,ring3_hbond,ring3_rmsd_full,ring3_rmsd_bb"/>
+        <Add metrics="ring4_dih,ring4_eng,ring4_hbond,ring4_rmsd_full,ring4_rmsd_bb" labels="ring4_dih,ring4_eng,ring4_hbond,ring4_rmsd_full,ring4_rmsd_bb"/>
+    </PROTOCOLS>
+</ROSETTASCRIPTS>

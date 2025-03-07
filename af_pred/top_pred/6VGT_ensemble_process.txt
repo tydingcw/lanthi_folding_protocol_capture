@@ -1,0 +1,14 @@
+6VGT/sample_6VGT_3_0215.pdb.gz
+6VGT/sample_6VGT_4_0874.pdb.gz
+6VGT/sample_6VGT_4_0435.pdb.gz
+6VGT/sample_6VGT_0_0254.pdb.gz
+6VGT/sample_6VGT_3_0460.pdb.gz
+6VGT/sample_6VGT_3_0270.pdb.gz
+6VGT/sample_6VGT_0_0486.pdb.gz
+6VGT/sample_6VGT_0_0640.pdb.gz
+6VGT/sample_6VGT_4_0780.pdb.gz
+6VGT/sample_6VGT_0_0433.pdb.gz
+6VGT/sample_6VGT_3_0913.pdb.gz
+6VGT/sample_6VGT_0_0864.pdb.gz
+6VGT/sample_6VGT_3_0314.pdb.gz
+6VGT/sample_6VGT_0_0964.pdb.gz

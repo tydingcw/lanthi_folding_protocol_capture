@@ -1,0 +1,54 @@
+ATOM      1  N   ILE A  12       3.666   1.832  -0.059  1.00 63.55      A    N  
+ATOM      2  CA  ILE A  12       2.361   2.343  -0.199  1.00 12.13      A    C  
+ATOM      3  C   ILE A  12       1.278   1.355   0.295  1.00 22.52      A    C  
+ATOM      4  O   ILE A  12       0.651   1.556   1.340  1.00 33.32      A    O  
+ATOM      5  CB  ILE A  12       2.001   2.739  -1.653  1.00 34.11      A    C  
+ATOM      6  CG1 ILE A  12       2.566   4.123  -1.979  1.00 61.23      A    C  
+ATOM      7  CG2 ILE A  12       0.500   2.702  -1.899  1.00 74.33      A    C  
+ATOM      8  CD1 ILE A  12       3.307   4.178  -3.297  1.00 52.24      A    C  
+ATOM      9  H   ILE A  12       4.209   1.699  -0.862  1.00 34.35      A    H  
+ATOM     10  HA  ILE A  12       2.245   3.255   0.411  1.00 24.15      A    H  
+ATOM     11  HB  ILE A  12       2.465   2.007  -2.298  1.00 24.31      A    H  
+ATOM     12 HG12 ILE A  12       1.755   4.834  -2.025  1.00 14.10      A    H  
+ATOM     13 HG13 ILE A  12       3.252   4.415  -1.198  1.00 23.34      A    H  
+ATOM     14 HG21 ILE A  12      -0.014   3.129  -1.051  1.00 73.25      A    H  
+ATOM     15 HG22 ILE A  12       0.266   3.272  -2.786  1.00 63.42      A    H  
+ATOM     16 HG23 ILE A  12       0.183   1.679  -2.036  1.00 23.15      A    H  
+ATOM     17 HD11 ILE A  12       3.009   3.345  -3.914  1.00 74.23      A    H  
+ATOM     18 HD12 ILE A  12       3.074   5.103  -3.802  1.00 23.50      A    H  
+ATOM     19 HD13 ILE A  12       4.370   4.129  -3.113  1.00 14.21      A    H  
+HETATM   20  N   DBU A  13       1.106   0.279  -0.463  1.00 31.45      A    N  
+HETATM   21  CA  DBU A  13       0.182  -0.748  -0.045  1.00 51.10      A    C  
+HETATM   22  C   DBU A  13      -1.277  -0.440   0.238  1.00 14.43      A    C  
+HETATM   23  O   DBU A  13      -1.904  -1.054   1.100  1.00 21.22      A    O  
+HETATM   24  CB  DBU A  13       0.649  -1.997   0.109  1.00 63.02      A    C  
+HETATM   25  CG  DBU A  13       2.095  -2.274  -0.181  1.00 70.32      A    C  
+HETATM   26  H   DBU A  13       1.576   0.266  -1.325  1.00 32.12      A    H  
+HETATM   27  HB  DBU A  13      -0.010  -2.785   0.443  1.00 54.14      A    H  
+HETATM   28  HG1 DBU A  13       2.215  -2.507  -1.227  1.00 62.43      A    H  
+HETATM   29  HG2 DBU A  13       2.426  -3.115   0.406  1.00 21.15      A    H  
+HETATM   30  HG3 DBU A  13       2.680  -1.401   0.069  1.00 20.41      A    H  
+ATOM     31  N   ALA A  14      -1.808   0.547  -0.478  1.00 72.34      A    N  
+ATOM     32  CA  ALA A  14      -3.190   0.971  -0.287  1.00 72.21      A    C  
+ATOM     33  C   ALA A  14      -4.162  -0.137  -0.677  1.00 41.22      A    C  
+ATOM     34  O   ALA A  14      -5.133  -0.401   0.031  1.00 44.14      A    O  
+ATOM     35  CB  ALA A  14      -3.471   2.230  -1.092  1.00  3.40      A    C  
+ATOM     36  H   ALA A  14      -1.258   0.999  -1.150  1.00 21.40      A    H  
+ATOM     37  HA  ALA A  14      -3.326   1.204   0.760  1.00 10.42      A    H  
+ATOM     38  HB1 ALA A  14      -3.120   2.096  -2.105  1.00  1.04      A    H  
+ATOM     39  HB2 ALA A  14      -4.534   2.421  -1.103  1.00 61.22      A    H  
+ATOM     40  HB3 ALA A  14      -2.959   3.067  -0.641  1.00 32.12      A    H  
+CONECT    3   20
+CONECT   20    3   21   26
+CONECT   21   20   22   24
+CONECT   22   21   23   31
+CONECT   23   22
+CONECT   24   21   25   27
+CONECT   25   24   28   29   30
+CONECT   26   20
+CONECT   27   24
+CONECT   28   25
+CONECT   29   25
+CONECT   30   25
+CONECT   31   22
+END

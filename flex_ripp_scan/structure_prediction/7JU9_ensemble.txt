@@ -1,0 +1,16 @@
+score:  221.9937018500315
+7JU9/367_run1_7JU9_1_rename_1285.pdb.gz
+7JU9/396_run1_7JU9_1_rename_3165.pdb.gz
+7JU9/16_run1_7JU9_1_rename_2696.pdb.gz
+7JU9/102_run1_7JU9_1_rename_2165.pdb.gz
+7JU9/44_run1_7JU9_1_rename_2676.pdb.gz
+7JU9/324_run1_7JU9_1_rename_0720.pdb.gz
+7JU9/375_run1_7JU9_1_rename_1757.pdb.gz
+7JU9/242_run1_7JU9_1_rename_0168.pdb.gz
+7JU9/262_run1_7JU9_1_rename_2360.pdb.gz
+7JU9/64_run1_7JU9_1_rename_2998.pdb.gz
+7JU9/268_run1_7JU9_1_rename_0167.pdb.gz
+7JU9/437_run1_7JU9_1_rename_1029.pdb.gz
+7JU9/306_run1_7JU9_1_rename_0024.pdb.gz
+7JU9/30_run1_7JU9_1_rename_1351.pdb.gz
+7JU9/199_run1_7JU9_1_rename_1654.pdb.gz

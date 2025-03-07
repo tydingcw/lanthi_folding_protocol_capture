@@ -1,0 +1,5 @@
+readfasta 2KTOA.fasta
+readblast sstmp.ascii
+calcsecondary -n -b
+writesecondary 2KTOA.jufo_ss -p
+quit

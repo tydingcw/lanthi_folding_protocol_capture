@@ -1,0 +1,18 @@
+score: 481.9021764969669
+6VHJ/16_run1_6VHJ_1_rename_69509.pdb.gz
+6VHJ/16_run1_6VHJ_1_rename_44321.pdb.gz
+6VHJ/7_run1_6VHJ_1_rename_06591.pdb.gz
+6VHJ/16_run1_6VHJ_1_rename_53908.pdb.gz
+6VHJ/7_run1_6VHJ_1_rename_40762.pdb.gz
+6VHJ/7_run1_6VHJ_1_rename_16912.pdb.gz
+6VHJ/1_run1_6VHJ_1_rename_58912.pdb.gz
+6VHJ/17_run1_6VHJ_1_rename_14027.pdb.gz
+6VHJ/18_run1_6VHJ_1_rename_48174.pdb.gz
+6VHJ/15_run1_6VHJ_1_rename_60031.pdb.gz
+6VHJ/7_run1_6VHJ_1_rename_22658.pdb.gz
+6VHJ/4_run1_6VHJ_1_rename_22461.pdb.gz
+6VHJ/1_run1_6VHJ_1_rename_70065.pdb.gz
+6VHJ/16_run1_6VHJ_1_rename_74813.pdb.gz
+6VHJ/16_run1_6VHJ_1_rename_68186.pdb.gz
+6VHJ/6_run1_6VHJ_1_rename_02593.pdb.gz
+6VHJ/18_run1_6VHJ_1_rename_39715.pdb.gz

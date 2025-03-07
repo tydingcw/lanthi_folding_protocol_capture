@@ -1,0 +1,1363 @@
+data_30712
+
+
+#######################
+#  Entry information  #
+#######################
+save_entry_information
+   _Entry.Sf_category                    entry_information
+   _Entry.Sf_framecode                   entry_information
+   _Entry.ID                             30712
+   _Entry.Title
+;
+Solution NMR of Prochlorosin 1.1 produced by Prochlorococcus MIT 9313
+;
+   _Entry.Type                           macromolecule
+   _Entry.Version_type                   original
+   _Entry.Submission_date                2020-01-09
+   _Entry.Accession_date                 2020-01-09
+   _Entry.Last_release_date              2020-01-13
+   _Entry.Original_release_date          2020-01-13
+   _Entry.Origination                    author
+   _Entry.Format_name                    .
+   _Entry.NMR_STAR_version               3.2.6.0
+   _Entry.NMR_STAR_dict_location         .
+   _Entry.Original_NMR_STAR_version      3.1
+   _Entry.Experimental_method            NMR
+   _Entry.Experimental_method_subtype    SOLUTION
+   _Entry.Source_data_format             .
+   _Entry.Source_data_format_version     .
+   _Entry.Generated_software_name        .
+   _Entry.Generated_software_version     .
+   _Entry.Generated_software_ID          .
+   _Entry.Generated_software_label       .
+   _Entry.Generated_date                 .
+   _Entry.DOI                            .
+   _Entry.UUID                           .
+   _Entry.Related_coordinate_file_name   .
+   _Entry.Details                        .
+   _Entry.BMRB_internal_directory_name   .
+
+   loop_
+      _Entry_experimental_methods.ID
+      _Entry_experimental_methods.Method
+      _Entry_experimental_methods.Subtype
+      _Entry_experimental_methods.Entry_ID
+
+      1   'SOLUTION NMR'   'SOLUTION NMR'   30712
+   stop_
+
+   loop_
+      _Entry_author.Ordinal
+      _Entry_author.Given_name
+      _Entry_author.Family_name
+      _Entry_author.First_initial
+      _Entry_author.Middle_initials
+      _Entry_author.Family_title
+      _Entry_author.ORCID
+      _Entry_author.Entry_ID
+
+      1   S.   Bobeica          S.   C.   .   .   30712
+      2   W.   'van der Donk'   W.   A.   .   .   30712
+      3   W.   Tang             W.   .    .   .   30712
+   stop_
+
+   loop_
+      _Struct_keywords.Keywords
+      _Struct_keywords.Text
+      _Struct_keywords.Entry_ID
+
+      RiPP                               .   30712
+      'UNKNOWN FUNCTION'                 .   30712
+      'cyclic peptide'                   .   30712
+      lanthipeptide                      .   30712
+      'posttranslational modification'   .   30712
+   stop_
+
+   loop_
+      _Data_set.Type
+      _Data_set.Count
+      _Data_set.Entry_ID
+
+      assigned_chemical_shifts   1   30712
+   stop_
+
+   loop_
+      _Datum.Type
+      _Datum.Count
+      _Datum.Entry_ID
+
+      '1H chemical shifts'   89   30712
+   stop_
+
+   loop_
+      _Release.Release_number
+      _Release.Format_type
+      _Release.Format_version
+      _Release.Date
+      _Release.Submission_date
+      _Release.Type
+      _Release.Author
+      _Release.Detail
+      _Release.Entry_ID
+
+      1   .   .   2020-07-05   .   original   BMRB   .   30712
+   stop_
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+      PDB   6VHJ   .   30712
+   stop_
+save_
+
+
+###############
+#  Citations  #
+###############
+save_citation_1
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 citation_1
+   _Citation.Entry_ID                     30712
+   _Citation.ID                           1
+   _Citation.Name                         .
+   _Citation.Class                        'reference citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              .
+   _Citation.PubMed_ID                    20479271
+   _Citation.DOI                          10.1073/pnas.0913677107
+   _Citation.Full_citation                .
+   _Citation.Title
+;
+Catalytic promiscuity in the biosynthesis of cyclic peptide secondary metabolites in planktonic marine cyanobacteria.
+;
+   _Citation.Status                       published
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev               'Proc. Natl. Acad. Sci. U.S.A.'
+   _Citation.Journal_name_full            .
+   _Citation.Journal_volume               107
+   _Citation.Journal_issue                23
+   _Citation.Journal_ASTM                 PNASA6
+   _Citation.Journal_ISSN                 1091-6490
+   _Citation.Journal_CSD                  0040
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   10430
+   _Citation.Page_last                    10435
+   _Citation.Year                         2010
+   _Citation.Details                      .
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.ORCID
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1    B.   Li               B.   .    .   .   30712   1
+      2    D.   Sher             D.   .    .   .   30712   1
+      3    L.   Kelly            L.   .    .   .   30712   1
+      4    Y.   Shi              Y.   .    .   .   30712   1
+      5    K.   Huang            K.   .    .   .   30712   1
+      6    P.   Knerr            P.   J.   .   .   30712   1
+      7    I.   Joewono          I.   .    .   .   30712   1
+      8    D.   Rusch            D.   .    .   .   30712   1
+      9    S.   Chisholm         S.   W.   .   .   30712   1
+      10   W.   'van der Donk'   W.   A.   .   .   30712   1
+   stop_
+save_
+
+save_citation_2
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 citation_2
+   _Citation.Entry_ID                     30712
+   _Citation.ID                           2
+   _Citation.Name                         .
+   _Citation.Class                        'reference citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              .
+   _Citation.PubMed_ID                    28630351
+   _Citation.DOI                          10.1073/pnas.1700990114
+   _Citation.Full_citation                .
+   _Citation.Title
+;
+Evolutionary radiation of lanthipeptides in marine cyanobacteria.
+;
+   _Citation.Status                       published
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev               'Proc. Natl. Acad. Sci. U.S.A.'
+   _Citation.Journal_name_full            .
+   _Citation.Journal_volume               114
+   _Citation.Journal_issue                27
+   _Citation.Journal_ASTM                 PNASA6
+   _Citation.Journal_ISSN                 1091-6490
+   _Citation.Journal_CSD                  0040
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   E5424
+   _Citation.Page_last                    E5433
+   _Citation.Year                         2017
+   _Citation.Details                      .
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.ORCID
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1   A.   Cubillos-Ruiz    A.   .    .   .   30712   2
+      2   J.   Berta-Thompson   J.   W.   .   .   30712   2
+      3   J.   Becker           J.   W.   .   .   30712   2
+      4   W.   'van der Donk'   W.   A.   .   .   30712   2
+      5   S.   Chisholm         S.   W.   .   .   30712   2
+   stop_
+save_
+
+save_citation_3
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 citation_3
+   _Citation.Entry_ID                     30712
+   _Citation.ID                           3
+   _Citation.Name                         .
+   _Citation.Class                        'entry citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              .
+   _Citation.PubMed_ID                    22574919
+   _Citation.DOI                          10.1021/bi300255s
+   _Citation.Full_citation                .
+   _Citation.Title
+;
+Structural characterization of four prochlorosins: a novel class of lantipeptides produced by planktonic marine cyanobacteria.
+;
+   _Citation.Status                       published
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev               Biochemistry
+   _Citation.Journal_name_full            .
+   _Citation.Journal_volume               51
+   _Citation.Journal_issue                21
+   _Citation.Journal_ASTM                 BICHAW
+   _Citation.Journal_ISSN                 1520-4995
+   _Citation.Journal_CSD                  0033
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   4271
+   _Citation.Page_last                    4279
+   _Citation.Year                         2012
+   _Citation.Details                      .
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.ORCID
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1   W.   Tang             W.   .    .   .   30712   3
+      2   W.   'van der Donk'   W.   A.   .   .   30712   3
+   stop_
+save_
+
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+save_assembly
+   _Assembly.Sf_category                       assembly
+   _Assembly.Sf_framecode                      assembly
+   _Assembly.Entry_ID                          30712
+   _Assembly.ID                                1
+   _Assembly.Name                              'Prochlorosin 1.1'
+   _Assembly.BMRB_code                         .
+   _Assembly.Number_of_components              .
+   _Assembly.Organic_ligands                   .
+   _Assembly.Metal_ions                        .
+   _Assembly.Non_standard_bonds                .
+   _Assembly.Ambiguous_conformational_states   .
+   _Assembly.Ambiguous_chem_comp_sites         .
+   _Assembly.Molecules_in_chemical_exchange    .
+   _Assembly.Paramagnetic                      no
+   _Assembly.Thiol_state                       .
+   _Assembly.Molecular_mass                    .
+   _Assembly.Enzyme_commission_number          .
+   _Assembly.Details                           .
+   _Assembly.DB_query_date                     .
+   _Assembly.DB_query_revised_last_date        .
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+      1   entity_1   1   $entity_1   A   A   yes   .   .   .   .   .   .   30712   1
+   stop_
+save_
+
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+save_entity_1
+   _Entity.Sf_category                       entity
+   _Entity.Sf_framecode                      entity_1
+   _Entity.Entry_ID                          30712
+   _Entity.ID                                1
+   _Entity.BMRB_code                         .
+   _Entity.Name                              entity_1
+   _Entity.Type                              polymer
+   _Entity.Polymer_common_type               .
+   _Entity.Polymer_type                      polypeptide(L)
+   _Entity.Polymer_type_details              .
+   _Entity.Polymer_strand_ID                 A
+   _Entity.Polymer_seq_one_letter_code_can   .
+   _Entity.Polymer_seq_one_letter_code
+;
+FFCVQGXANRFXINVC
+;
+   _Entity.Target_identifier                 .
+   _Entity.Polymer_author_defined_seq        .
+   _Entity.Polymer_author_seq_details        .
+   _Entity.Ambiguous_conformational_states   .
+   _Entity.Ambiguous_chem_comp_sites         .
+   _Entity.Nstd_monomer                      yes
+   _Entity.Nstd_chirality                    .
+   _Entity.Nstd_linkage                      no
+   _Entity.Nonpolymer_comp_ID                .
+   _Entity.Nonpolymer_comp_label             .
+   _Entity.Number_of_monomers                16
+   _Entity.Number_of_nonpolymer_components   .
+   _Entity.Paramagnetic                      no
+   _Entity.Thiol_state                       'not reported'
+   _Entity.Src_method                        man
+   _Entity.Parent_entity_ID                  1
+   _Entity.Fragment                          .
+   _Entity.Mutation                          .
+   _Entity.EC_number                         .
+   _Entity.Calc_isoelectric_point            .
+   _Entity.Formula_weight                    1789.109
+   _Entity.Formula_weight_exptl              .
+   _Entity.Formula_weight_exptl_meth         .
+   _Entity.Details                           .
+   _Entity.DB_query_date                     .
+   _Entity.DB_query_revised_last_date        .
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+      1    .   PHE   .   30712   1
+      2    .   PHE   .   30712   1
+      3    .   CYS   .   30712   1
+      4    .   VAL   .   30712   1
+      5    .   GLN   .   30712   1
+      6    .   GLY   .   30712   1
+      7    .   DBB   .   30712   1
+      8    .   ALA   .   30712   1
+      9    .   ASN   .   30712   1
+      10   .   ARG   .   30712   1
+      11   .   PHE   .   30712   1
+      12   .   DBB   .   30712   1
+      13   .   ILE   .   30712   1
+      14   .   ASN   .   30712   1
+      15   .   VAL   .   30712   1
+      16   .   CYS   .   30712   1
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+      .   PHE   1    1    30712   1
+      .   PHE   2    2    30712   1
+      .   CYS   3    3    30712   1
+      .   VAL   4    4    30712   1
+      .   GLN   5    5    30712   1
+      .   GLY   6    6    30712   1
+      .   DBB   7    7    30712   1
+      .   ALA   8    8    30712   1
+      .   ASN   9    9    30712   1
+      .   ARG   10   10   30712   1
+      .   PHE   11   11   30712   1
+      .   DBB   12   12   30712   1
+      .   ILE   13   13   30712   1
+      .   ASN   14   14   30712   1
+      .   VAL   15   15   30712   1
+      .   CYS   16   16   30712   1
+   stop_
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+save_natural_source
+   _Entity_natural_src_list.Sf_category    natural_source
+   _Entity_natural_src_list.Sf_framecode   natural_source
+   _Entity_natural_src_list.Entry_ID       30712
+   _Entity_natural_src_list.ID             1
+
+   loop_
+      _Entity_natural_src.ID
+      _Entity_natural_src.Entity_ID
+      _Entity_natural_src.Entity_label
+      _Entity_natural_src.Entity_chimera_segment_ID
+      _Entity_natural_src.NCBI_taxonomy_ID
+      _Entity_natural_src.Type
+      _Entity_natural_src.Common
+      _Entity_natural_src.Organism_name_scientific
+      _Entity_natural_src.Organism_name_common
+      _Entity_natural_src.Organism_acronym
+      _Entity_natural_src.ICTVdb_decimal_code
+      _Entity_natural_src.Superkingdom
+      _Entity_natural_src.Kingdom
+      _Entity_natural_src.Genus
+      _Entity_natural_src.Species
+      _Entity_natural_src.Strain
+      _Entity_natural_src.Variant
+      _Entity_natural_src.Organ
+      _Entity_natural_src.Tissue
+      _Entity_natural_src.Tissue_fraction
+      _Entity_natural_src.Cell_line
+      _Entity_natural_src.Cell_type
+      _Entity_natural_src.ATCC_number
+      _Entity_natural_src.Organelle
+      _Entity_natural_src.Secretion
+      _Entity_natural_src.Plasmid
+      _Entity_natural_src.Gene_mnemonic
+      _Entity_natural_src.Details
+      _Entity_natural_src.Entry_ID
+      _Entity_natural_src.Entity_natural_src_list_ID
+
+      1   1   $entity_1   .   74547   organism   .   'Prochlorococcus marinus str. MIT 9313'   'Prochlorococcus marinus'   .   .   Bacteria   .   Prochlorococcus   marinus   .   .   .   .   .   .   .   .   .   .   .   .   .   30712   1
+   stop_
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+save_experimental_source
+   _Entity_experimental_src_list.Sf_category    experimental_source
+   _Entity_experimental_src_list.Sf_framecode   experimental_source
+   _Entity_experimental_src_list.Entry_ID       30712
+   _Entity_experimental_src_list.ID             1
+
+   loop_
+      _Entity_experimental_src.ID
+      _Entity_experimental_src.Entity_ID
+      _Entity_experimental_src.Entity_label
+      _Entity_experimental_src.Entity_chimera_segment_ID
+      _Entity_experimental_src.Production_method
+      _Entity_experimental_src.Host_org_scientific_name
+      _Entity_experimental_src.Host_org_name_common
+      _Entity_experimental_src.Host_org_details
+      _Entity_experimental_src.Host_org_NCBI_taxonomy_ID
+      _Entity_experimental_src.Host_org_genus
+      _Entity_experimental_src.Host_org_species
+      _Entity_experimental_src.Host_org_strain
+      _Entity_experimental_src.Host_org_variant
+      _Entity_experimental_src.Host_org_ATCC_number
+      _Entity_experimental_src.Vector_type
+      _Entity_experimental_src.PDBview_host_org_vector_name
+      _Entity_experimental_src.PDBview_plasmid_name
+      _Entity_experimental_src.Vector_name
+      _Entity_experimental_src.Vector_details
+      _Entity_experimental_src.Vendor_name
+      _Entity_experimental_src.Details
+      _Entity_experimental_src.Entry_ID
+      _Entity_experimental_src.Entity_experimental_src_list_ID
+
+      1   1   $entity_1   .   'recombinant technology'   'Escherichia coli'   .   'Peptide is purified N-terminally His6-tagged from co-expression with ProcM'   562   Escherichia   coli   .   .   .   .   .   .   .   .   .   .   30712   1
+   stop_
+save_
+
+
+    #################################
+    #  Polymer residues and ligands #
+    #################################
+save_chem_comp_DBB
+   _Chem_comp.Sf_category                       chem_comp
+   _Chem_comp.Sf_framecode                      chem_comp_DBB
+   _Chem_comp.Entry_ID                          30712
+   _Chem_comp.ID                                DBB
+   _Chem_comp.Provenance                        PDB
+   _Chem_comp.Name                              'D-ALPHA-AMINOBUTYRIC ACID'
+   _Chem_comp.Type                              'D-PEPTIDE LINKING'
+   _Chem_comp.BMRB_code                         DBB
+   _Chem_comp.PDB_code                          DBB
+   _Chem_comp.Ambiguous_flag                    no
+   _Chem_comp.Initial_date                      2015-02-19
+   _Chem_comp.Modified_date                     2015-02-19
+   _Chem_comp.Release_status                    REL
+   _Chem_comp.Replaced_by                       .
+   _Chem_comp.Replaces                          AA3
+   _Chem_comp.One_letter_code                   T
+   _Chem_comp.Three_letter_code                 DBB
+   _Chem_comp.Number_atoms_all                  16
+   _Chem_comp.Number_atoms_nh                   7
+   _Chem_comp.Atom_nomenclature_source          .
+   _Chem_comp.PubChem_code                      .
+   _Chem_comp.Subcomponent_list                 .
+   _Chem_comp.InChI_code                        InChI=1S/C4H9NO2/c1-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)/t3-/m1/s1
+   _Chem_comp.Mon_nstd_flag                     .
+   _Chem_comp.Mon_nstd_class                    .
+   _Chem_comp.Mon_nstd_details                  .
+   _Chem_comp.Mon_nstd_parent                   .
+   _Chem_comp.Mon_nstd_parent_comp_ID           .
+   _Chem_comp.Std_deriv_one_letter_code         .
+   _Chem_comp.Std_deriv_three_letter_code       .
+   _Chem_comp.Std_deriv_BMRB_code               .
+   _Chem_comp.Std_deriv_PDB_code                .
+   _Chem_comp.Std_deriv_chem_comp_name          .
+   _Chem_comp.Synonyms                          .
+   _Chem_comp.Formal_charge                     0
+   _Chem_comp.Paramagnetic                      .
+   _Chem_comp.Aromatic                          no
+   _Chem_comp.Formula                           'C4 H9 N O2'
+   _Chem_comp.Formula_weight                    103.120
+   _Chem_comp.Formula_mono_iso_wt_nat           .
+   _Chem_comp.Formula_mono_iso_wt_13C           .
+   _Chem_comp.Formula_mono_iso_wt_15N           .
+   _Chem_comp.Formula_mono_iso_wt_13C_15N       .
+   _Chem_comp.Image_file_name                   .
+   _Chem_comp.Image_file_format                 .
+   _Chem_comp.Topo_file_name                    .
+   _Chem_comp.Topo_file_format                  .
+   _Chem_comp.Struct_file_name                  .
+   _Chem_comp.Struct_file_format                .
+   _Chem_comp.Stereochem_param_file_name        .
+   _Chem_comp.Stereochem_param_file_format      .
+   _Chem_comp.Model_details                     .
+   _Chem_comp.Model_erf                         .
+   _Chem_comp.Model_source                      .
+   _Chem_comp.Model_coordinates_details         .
+   _Chem_comp.Model_coordinates_missing_flag    no
+   _Chem_comp.Ideal_coordinates_details         Corina
+   _Chem_comp.Ideal_coordinates_missing_flag    no
+   _Chem_comp.Model_coordinates_db_code         1AJ1
+   _Chem_comp.Processing_site                   EBI
+   _Chem_comp.Vendor                            .
+   _Chem_comp.Vendor_product_code               .
+   _Chem_comp.Details                           .
+   _Chem_comp.DB_query_date                     .
+   _Chem_comp.DB_last_query_revised_last_date   .
+
+   loop_
+      _Chem_comp_descriptor.Descriptor
+      _Chem_comp_descriptor.Type
+      _Chem_comp_descriptor.Program
+      _Chem_comp_descriptor.Program_version
+      _Chem_comp_descriptor.Entry_ID
+      _Chem_comp_descriptor.Comp_ID
+
+      CCC(C(=O)O)N                                                      SMILES             'OpenEye OEToolkits'   1.7.6   30712   DBB
+      CC[C@@H](N)C(O)=O                                                 SMILES_CANONICAL   CACTVS                 3.385   30712   DBB
+      CC[C@H](C(=O)O)N                                                  SMILES_CANONICAL   'OpenEye OEToolkits'   1.7.6   30712   DBB
+      CC[CH](N)C(O)=O                                                   SMILES             CACTVS                 3.385   30712   DBB
+      InChI=1S/C4H9NO2/c1-2-3(5)4(6)7/h3H,2,5H2,1H3,(H,6,7)/t3-/m1/s1   InChI              InChI                  1.03    30712   DBB
+      O=C(O)C(N)CC                                                      SMILES             ACDLabs                12.01   30712   DBB
+      QWCKQJZIFLGMSD-GSVOUGTGSA-N                                       InChIKey           InChI                  1.03    30712   DBB
+   stop_
+
+   loop_
+      _Chem_comp_identifier.Identifier
+      _Chem_comp_identifier.Type
+      _Chem_comp_identifier.Program
+      _Chem_comp_identifier.Program_version
+      _Chem_comp_identifier.Entry_ID
+      _Chem_comp_identifier.Comp_ID
+
+      '(2R)-2-aminobutanoic acid'    'SYSTEMATIC NAME'   ACDLabs                12.01   30712   DBB
+      '(2R)-2-azanylbutanoic acid'   'SYSTEMATIC NAME'   'OpenEye OEToolkits'   1.7.6   30712   DBB
+   stop_
+
+   loop_
+      _Chem_comp_atom.Atom_ID
+      _Chem_comp_atom.BMRB_code
+      _Chem_comp_atom.PDB_atom_ID
+      _Chem_comp_atom.Alt_atom_ID
+      _Chem_comp_atom.Auth_atom_ID
+      _Chem_comp_atom.Type_symbol
+      _Chem_comp_atom.Isotope_number
+      _Chem_comp_atom.Chirality
+      _Chem_comp_atom.Stereo_config
+      _Chem_comp_atom.Charge
+      _Chem_comp_atom.Partial_charge
+      _Chem_comp_atom.Oxidation_number
+      _Chem_comp_atom.Unpaired_electron_number
+      _Chem_comp_atom.Align
+      _Chem_comp_atom.Aromatic_flag
+      _Chem_comp_atom.Leaving_atom_flag
+      _Chem_comp_atom.Substruct_code
+      _Chem_comp_atom.Ionizable
+      _Chem_comp_atom.Drawing_2D_coord_x
+      _Chem_comp_atom.Drawing_2D_coord_y
+      _Chem_comp_atom.Model_Cartn_x
+      _Chem_comp_atom.Model_Cartn_x_esd
+      _Chem_comp_atom.Model_Cartn_y
+      _Chem_comp_atom.Model_Cartn_y_esd
+      _Chem_comp_atom.Model_Cartn_z
+      _Chem_comp_atom.Model_Cartn_z_esd
+      _Chem_comp_atom.Model_Cartn_x_ideal
+      _Chem_comp_atom.Model_Cartn_y_ideal
+      _Chem_comp_atom.Model_Cartn_z_ideal
+      _Chem_comp_atom.PDBX_ordinal
+      _Chem_comp_atom.Details
+      _Chem_comp_atom.Entry_ID
+      _Chem_comp_atom.Comp_ID
+
+      N     N     N     N     .   N   .   .   N   0   .   .   .   1   no   no    .   .   .   .   0.509    .   -3.571   .   0.056    .   0.634    1.556    0.369    1    .   30712   DBB
+      CA    CA    CA    CA    .   C   .   .   R   0   .   .   .   1   no   no    .   .   .   .   1.376    .   -4.454   .   0.879    .   0.310    0.125    0.428    2    .   30712   DBB
+      C     C     C     C     .   C   .   .   N   0   .   .   .   1   no   no    .   .   .   .   2.688    .   -4.993   .   0.220    .   -1.126   -0.083   0.022    3    .   30712   DBB
+      O     O     O     O     .   O   .   .   N   0   .   .   .   1   no   no    .   .   .   .   3.618    .   -5.345   .   0.954    .   -1.702   0.765    -0.617   4    .   30712   DBB
+      CB    CB    CB    CB    .   C   .   .   N   0   .   .   .   1   no   no    .   .   .   .   1.654    .   -3.558   .   2.132    .   1.226    -0.645   -0.525   5    .   30712   DBB
+      CG    CG    CG    CG    .   C   .   .   N   0   .   .   .   1   no   no    .   .   .   .   0.409    .   -3.428   .   3.048    .   2.674    -0.536   -0.041   6    .   30712   DBB
+      OXT   OXT   OXT   OXT   .   O   .   .   N   0   .   .   .   1   no   yes   .   .   .   .   2.768    .   -5.110   .   -1.124   .   -1.766   -1.210   0.371    7    .   30712   DBB
+      H     H     H     H     .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   -0.291   .   -3.297   .   0.590    .   0.506    1.918    -0.564   8    .   30712   DBB
+      H1    H1    H1    H1    .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   1.023    .   -2.757   .   -0.214   .   0.087    2.079    1.037    9    .   30712   DBB
+      HA    HA    HA    HA    .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   0.785    .   -5.321   .   1.210    .   0.456    -0.239   1.445    10   .   30712   DBB
+      HB2   HB2   HB2   HB2   .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   2.475    .   -4.005   .   2.712    .   0.928    -1.693   -0.548   11   .   30712   DBB
+      HB3   HB3   HB3   HB3   .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   1.949    .   -2.555   .   1.791    .   1.146    -0.222   -1.527   12   .   30712   DBB
+      HG1   HG1   HG1   HG1   .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   0.653    .   -2.792   .   3.911    .   2.971    0.512    -0.018   13   .   30712   DBB
+      HG2   HG2   HG2   HG2   .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   -0.418   .   -2.975   .   2.481    .   2.754    -0.959   0.961    14   .   30712   DBB
+      HG3   HG3   HG3   HG3   .   H   .   .   N   0   .   .   .   1   no   no    .   .   .   .   0.108    .   -4.425   .   3.401    .   3.326    -1.085   -0.720   15   .   30712   DBB
+      HXT   HXT   HXT   HXT   .   H   .   .   N   0   .   .   .   1   no   yes   .   .   .   .   3.609    .   -5.484   .   -1.360   .   -2.686   -1.298   0.088    16   .   30712   DBB
+   stop_
+
+   loop_
+      _Chem_comp_bond.ID
+      _Chem_comp_bond.Type
+      _Chem_comp_bond.Value_order
+      _Chem_comp_bond.Atom_ID_1
+      _Chem_comp_bond.Atom_ID_2
+      _Chem_comp_bond.Aromatic_flag
+      _Chem_comp_bond.Stereo_config
+      _Chem_comp_bond.Ordinal
+      _Chem_comp_bond.Details
+      _Chem_comp_bond.Entry_ID
+      _Chem_comp_bond.Comp_ID
+
+      1    .   SING   N     CA    no   N   1    .   30712   DBB
+      2    .   SING   CA    C     no   N   2    .   30712   DBB
+      3    .   SING   CA    CB    no   N   3    .   30712   DBB
+      4    .   DOUB   C     O     no   N   4    .   30712   DBB
+      5    .   SING   CB    CG    no   N   5    .   30712   DBB
+      6    .   SING   C     OXT   no   N   6    .   30712   DBB
+      7    .   SING   N     H     no   N   7    .   30712   DBB
+      8    .   SING   N     H1    no   N   8    .   30712   DBB
+      9    .   SING   CA    HA    no   N   9    .   30712   DBB
+      10   .   SING   CB    HB2   no   N   10   .   30712   DBB
+      11   .   SING   CB    HB3   no   N   11   .   30712   DBB
+      12   .   SING   CG    HG1   no   N   12   .   30712   DBB
+      13   .   SING   CG    HG2   no   N   13   .   30712   DBB
+      14   .   SING   CG    HG3   no   N   14   .   30712   DBB
+      15   .   SING   OXT   HXT   no   N   15   .   30712   DBB
+   stop_
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+save_sample_1
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     sample_1
+   _Sample.Entry_ID                         30712
+   _Sample.ID                               1
+   _Sample.Name                             .
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                          '2 mM Prochlorosin 1.1, 90% H2O/10% D2O'
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                   '90% H2O/10% D2O'
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1   'Prochlorosin 1.1'   'natural abundance'   1   $assembly   1   $entity_1   .   .   2   .   .   mM   0.2   .   .   .   30712   1
+   stop_
+save_
+
+save_sample_2
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     sample_2
+   _Sample.Entry_ID                         30712
+   _Sample.ID                               2
+   _Sample.Name                             .
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                          '2 mM Prochlorosin 1.1, 100% D2O'
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                   '100% D2O'
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1   'Prochlorosin 1.1'   'natural abundance'   1   $assembly   1   $entity_1   .   .   2   .   .   mM   0.2   .   .   .   30712   2
+   stop_
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+save_sample_conditions_1
+   _Sample_condition_list.Sf_category    sample_conditions
+   _Sample_condition_list.Sf_framecode   sample_conditions_1
+   _Sample_condition_list.Entry_ID       30712
+   _Sample_condition_list.ID             1
+   _Sample_condition_list.Name           .
+   _Sample_condition_list.Details        .
+
+   loop_
+      _Sample_condition_variable.Type
+      _Sample_condition_variable.Val
+      _Sample_condition_variable.Val_err
+      _Sample_condition_variable.Val_units
+      _Sample_condition_variable.Entry_ID
+      _Sample_condition_variable.Sample_condition_list_ID
+
+      pH            6     0.1   pH    30712   1
+      pressure      1     0     atm   30712   1
+      temperature   296   0.1   K     30712   1
+   stop_
+save_
+
+save_sample_conditions_2
+   _Sample_condition_list.Sf_category    sample_conditions
+   _Sample_condition_list.Sf_framecode   sample_conditions_2
+   _Sample_condition_list.Entry_ID       30712
+   _Sample_condition_list.ID             2
+   _Sample_condition_list.Name           .
+   _Sample_condition_list.Details        .
+
+   loop_
+      _Sample_condition_variable.Type
+      _Sample_condition_variable.Val
+      _Sample_condition_variable.Val_err
+      _Sample_condition_variable.Val_units
+      _Sample_condition_variable.Entry_ID
+      _Sample_condition_variable.Sample_condition_list_ID
+
+      pH            6     0.1   pH    30712   2
+      pressure      1     0     atm   30712   2
+      temperature   296   0.1   K     30712   2
+   stop_
+save_
+
+
+############################
+#  Computer software used  #
+############################
+save_software_1
+   _Software.Sf_category    software
+   _Software.Sf_framecode   software_1
+   _Software.Entry_ID       30712
+   _Software.ID             1
+   _Software.Type           .
+   _Software.Name           NMRDraw
+   _Software.Version        .
+   _Software.DOI            .
+   _Software.Details        .
+
+   loop_
+      _Vendor.Name
+      _Vendor.Address
+      _Vendor.Electronic_address
+      _Vendor.Entry_ID
+      _Vendor.Software_ID
+
+      'Delaglio, Grzesiek, Vuister, Zhu, Pfeifer and Bax'   .   .   30712   1
+   stop_
+
+   loop_
+      _Task.Software_module
+      _Task.Task
+      _Task.Entry_ID
+      _Task.Software_ID
+
+      .   processing   30712   1
+   stop_
+save_
+
+save_software_2
+   _Software.Sf_category    software
+   _Software.Sf_framecode   software_2
+   _Software.Entry_ID       30712
+   _Software.ID             2
+   _Software.Type           .
+   _Software.Name           Sparky
+   _Software.Version        .
+   _Software.DOI            .
+   _Software.Details        .
+
+   loop_
+      _Vendor.Name
+      _Vendor.Address
+      _Vendor.Electronic_address
+      _Vendor.Entry_ID
+      _Vendor.Software_ID
+
+      Goddard   .   .   30712   2
+   stop_
+
+   loop_
+      _Task.Software_module
+      _Task.Task
+      _Task.Entry_ID
+      _Task.Software_ID
+
+      .   'chemical shift assignment'   30712   2
+      .   'peak picking'                30712   2
+   stop_
+save_
+
+save_software_3
+   _Software.Sf_category    software
+   _Software.Sf_framecode   software_3
+   _Software.Entry_ID       30712
+   _Software.ID             3
+   _Software.Type           .
+   _Software.Name           'X-PLOR NIH'
+   _Software.Version        .
+   _Software.DOI            .
+   _Software.Details        .
+
+   loop_
+      _Vendor.Name
+      _Vendor.Address
+      _Vendor.Electronic_address
+      _Vendor.Entry_ID
+      _Vendor.Software_ID
+
+      'Schwieters, Kuszewski, Tjandra and Clore'   .   .   30712   3
+   stop_
+
+   loop_
+      _Task.Software_module
+      _Task.Task
+      _Task.Entry_ID
+      _Task.Software_ID
+
+      .   refinement                30712   3
+      .   'structure calculation'   30712   3
+   stop_
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+save_NMR_spectrometer_1
+   _NMR_spectrometer.Sf_category      NMR_spectrometer
+   _NMR_spectrometer.Sf_framecode     NMR_spectrometer_1
+   _NMR_spectrometer.Entry_ID         30712
+   _NMR_spectrometer.ID               1
+   _NMR_spectrometer.Name             .
+   _NMR_spectrometer.Details          .
+   _NMR_spectrometer.Manufacturer     Varian
+   _NMR_spectrometer.Model            INOVA
+   _NMR_spectrometer.Serial_number    .
+   _NMR_spectrometer.Field_strength   600
+save_
+
+save_NMR_spectrometer_list
+   _NMR_spectrometer_list.Sf_category    NMR_spectrometer_list
+   _NMR_spectrometer_list.Sf_framecode   NMR_spectrometer_list
+   _NMR_spectrometer_list.Entry_ID       30712
+   _NMR_spectrometer_list.ID             1
+   _NMR_spectrometer_list.Name           .
+
+   loop_
+      _NMR_spectrometer_view.ID
+      _NMR_spectrometer_view.Name
+      _NMR_spectrometer_view.Manufacturer
+      _NMR_spectrometer_view.Model
+      _NMR_spectrometer_view.Serial_number
+      _NMR_spectrometer_view.Field_strength
+      _NMR_spectrometer_view.Details
+      _NMR_spectrometer_view.Citation_ID
+      _NMR_spectrometer_view.Citation_label
+      _NMR_spectrometer_view.Entry_ID
+      _NMR_spectrometer_view.NMR_spectrometer_list_ID
+
+      1   NMR_spectrometer_1   Varian   INOVA   .   600   .   .   .   30712   1
+   stop_
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+save_experiment_list
+   _Experiment_list.Sf_category    experiment_list
+   _Experiment_list.Sf_framecode   experiment_list
+   _Experiment_list.Entry_ID       30712
+   _Experiment_list.ID             1
+   _Experiment_list.Details        .
+
+   loop_
+      _Experiment.ID
+      _Experiment.Name
+      _Experiment.Raw_data_flag
+      _Experiment.NMR_spec_expt_ID
+      _Experiment.NMR_spec_expt_label
+      _Experiment.MS_expt_ID
+      _Experiment.MS_expt_label
+      _Experiment.SAXS_expt_ID
+      _Experiment.SAXS_expt_label
+      _Experiment.FRET_expt_ID
+      _Experiment.FRET_expt_label
+      _Experiment.EMR_expt_ID
+      _Experiment.EMR_expt_label
+      _Experiment.Sample_ID
+      _Experiment.Sample_label
+      _Experiment.Sample_state
+      _Experiment.Sample_volume
+      _Experiment.Sample_volume_units
+      _Experiment.Sample_condition_list_ID
+      _Experiment.Sample_condition_list_label
+      _Experiment.Sample_spinning_rate
+      _Experiment.Sample_angle
+      _Experiment.NMR_tube_type
+      _Experiment.NMR_spectrometer_ID
+      _Experiment.NMR_spectrometer_label
+      _Experiment.NMR_spectrometer_probe_ID
+      _Experiment.NMR_spectrometer_probe_label
+      _Experiment.NMR_spectral_processing_ID
+      _Experiment.NMR_spectral_processing_label
+      _Experiment.Mass_spectrometer_ID
+      _Experiment.Mass_spectrometer_label
+      _Experiment.Xray_instrument_ID
+      _Experiment.Xray_instrument_label
+      _Experiment.Fluorescence_instrument_ID
+      _Experiment.Fluorescence_instrument_label
+      _Experiment.EMR_instrument_ID
+      _Experiment.EMR_instrument_label
+      _Experiment.Chromatographic_system_ID
+      _Experiment.Chromatographic_system_label
+      _Experiment.Chromatographic_column_ID
+      _Experiment.Chromatographic_column_label
+      _Experiment.Entry_ID
+      _Experiment.Experiment_list_ID
+
+      1   '2D 1H-1H TOCSY'   no   .   .   .   .   .   .   .   .   .   .   1   $sample_1   isotropic   .   .   1   $sample_conditions_1   .   .   .   1   $NMR_spectrometer_1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   30712   1
+      2   '2D 1H-1H NOESY'   no   .   .   .   .   .   .   .   .   .   .   1   $sample_1   isotropic   .   .   1   $sample_conditions_1   .   .   .   1   $NMR_spectrometer_1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   30712   1
+      3   '2D 1H-1H TOCSY'   no   .   .   .   .   .   .   .   .   .   .   2   $sample_2   isotropic   .   .   2   $sample_conditions_2   .   .   .   1   $NMR_spectrometer_1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   30712   1
+      4   '2D 1H-1H NOESY'   no   .   .   .   .   .   .   .   .   .   .   2   $sample_2   isotropic   .   .   2   $sample_conditions_2   .   .   .   1   $NMR_spectrometer_1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   30712   1
+   stop_
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+save_chem_shift_reference_1
+   _Chem_shift_reference.Sf_category    chem_shift_reference
+   _Chem_shift_reference.Sf_framecode   chem_shift_reference_1
+   _Chem_shift_reference.Entry_ID       30712
+   _Chem_shift_reference.ID             1
+   _Chem_shift_reference.Name           .
+   _Chem_shift_reference.Details        .
+
+   loop_
+      _Chem_shift_ref.Atom_type
+      _Chem_shift_ref.Atom_isotope_number
+      _Chem_shift_ref.Mol_common_name
+      _Chem_shift_ref.Atom_group
+      _Chem_shift_ref.Concentration_val
+      _Chem_shift_ref.Concentration_units
+      _Chem_shift_ref.Solvent
+      _Chem_shift_ref.Rank
+      _Chem_shift_ref.Chem_shift_units
+      _Chem_shift_ref.Chem_shift_val
+      _Chem_shift_ref.Ref_method
+      _Chem_shift_ref.Ref_type
+      _Chem_shift_ref.Indirect_shift_ratio
+      _Chem_shift_ref.External_ref_loc
+      _Chem_shift_ref.External_ref_sample_geometry
+      _Chem_shift_ref.External_ref_axis
+      _Chem_shift_ref.Ref_correction_type
+      _Chem_shift_ref.Correction_val
+      _Chem_shift_ref.Entry_ID
+      _Chem_shift_ref.Chem_shift_reference_ID
+
+      C   13   DSS   'methyl protons'   .   .   .   .   ppm   0.000   internal   indirect   0.25144953   .   .   .   .   .   30712   1
+      H   1    DSS   'methyl protons'   .   .   .   .   ppm   0.000   internal   direct     1.0          .   .   .   .   .   30712   1
+      N   15   DSS   'methyl protons'   .   .   .   .   ppm   0.000   internal   indirect   0.10132912   .   .   .   .   .   30712   1
+   stop_
+save_
+
+
+     ###################################
+     #  Assigned chemical shift lists  #
+     ###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+save_assigned_chemical_shifts_1
+   _Assigned_chem_shift_list.Sf_category                   assigned_chemical_shifts
+   _Assigned_chem_shift_list.Sf_framecode                  assigned_chemical_shifts_1
+   _Assigned_chem_shift_list.Entry_ID                      30712
+   _Assigned_chem_shift_list.ID                            1
+   _Assigned_chem_shift_list.Name                          .
+   _Assigned_chem_shift_list.Sample_condition_list_ID      1
+   _Assigned_chem_shift_list.Sample_condition_list_label   $sample_conditions_1
+   _Assigned_chem_shift_list.Chem_shift_reference_ID       1
+   _Assigned_chem_shift_list.Chem_shift_reference_label    $chem_shift_reference_1
+   _Assigned_chem_shift_list.Chem_shift_1H_err             0.01
+   _Assigned_chem_shift_list.Chem_shift_13C_err            0
+   _Assigned_chem_shift_list.Chem_shift_15N_err            0
+   _Assigned_chem_shift_list.Chem_shift_31P_err            0
+   _Assigned_chem_shift_list.Chem_shift_2H_err             0
+   _Assigned_chem_shift_list.Chem_shift_19F_err            0
+   _Assigned_chem_shift_list.Error_derivation_method       .
+   _Assigned_chem_shift_list.Details                       .
+   _Assigned_chem_shift_list.Text_data_format              .
+   _Assigned_chem_shift_list.Text_data                     .
+
+   loop_
+      _Chem_shift_experiment.Experiment_ID
+      _Chem_shift_experiment.Experiment_name
+      _Chem_shift_experiment.Sample_ID
+      _Chem_shift_experiment.Sample_label
+      _Chem_shift_experiment.Sample_state
+      _Chem_shift_experiment.Entry_ID
+      _Chem_shift_experiment.Assigned_chem_shift_list_ID
+
+      1   '2D 1H-1H TOCSY'   .   .   .   30712   1
+      2   '2D 1H-1H NOESY'   .   .   .   30712   1
+      3   '2D 1H-1H TOCSY'   .   .   .   30712   1
+      4   '2D 1H-1H NOESY'   .   .   .   30712   1
+   stop_
+
+   loop_
+      _Atom_chem_shift.ID
+      _Atom_chem_shift.Assembly_atom_ID
+      _Atom_chem_shift.Entity_assembly_ID
+      _Atom_chem_shift.Entity_assembly_asym_ID
+      _Atom_chem_shift.Entity_ID
+      _Atom_chem_shift.Comp_index_ID
+      _Atom_chem_shift.Seq_ID
+      _Atom_chem_shift.Comp_ID
+      _Atom_chem_shift.Atom_ID
+      _Atom_chem_shift.Atom_type
+      _Atom_chem_shift.Atom_isotope_number
+      _Atom_chem_shift.Val
+      _Atom_chem_shift.Val_err
+      _Atom_chem_shift.Assign_fig_of_merit
+      _Atom_chem_shift.Ambiguity_code
+      _Atom_chem_shift.Ambiguity_set_ID
+      _Atom_chem_shift.Occupancy
+      _Atom_chem_shift.Resonance_ID
+      _Atom_chem_shift.Auth_entity_assembly_ID
+      _Atom_chem_shift.Auth_asym_ID
+      _Atom_chem_shift.Auth_seq_ID
+      _Atom_chem_shift.Auth_comp_ID
+      _Atom_chem_shift.Auth_atom_ID
+      _Atom_chem_shift.Details
+      _Atom_chem_shift.Entry_ID
+      _Atom_chem_shift.Assigned_chem_shift_list_ID
+
+      1    .   1   .   1   2    2    PHE   H      H   1   8.412   0.005   .   1   .   .   .   .   A   2    PHE   H      .   30712   1
+      2    .   1   .   1   2    2    PHE   HA     H   1   4.808   0.025   .   1   .   .   .   .   A   2    PHE   HA     .   30712   1
+      3    .   1   .   1   2    2    PHE   HB2    H   1   2.958   0.003   .   2   .   .   .   .   A   2    PHE   HB2    .   30712   1
+      4    .   1   .   1   2    2    PHE   HB3    H   1   3.034   0.001   .   2   .   .   .   .   A   2    PHE   HB3    .   30712   1
+      5    .   1   .   1   2    2    PHE   HD1    H   1   7.167   0.008   .   3   .   .   .   .   A   2    PHE   HD1    .   30712   1
+      6    .   1   .   1   2    2    PHE   HD2    H   1   7.167   0.008   .   3   .   .   .   .   A   2    PHE   HD2    .   30712   1
+      7    .   1   .   1   2    2    PHE   HE1    H   1   7.310   0.004   .   3   .   .   .   .   A   2    PHE   HE1    .   30712   1
+      8    .   1   .   1   2    2    PHE   HE2    H   1   7.310   0.004   .   3   .   .   .   .   A   2    PHE   HE2    .   30712   1
+      9    .   1   .   1   2    2    PHE   HZ     H   1   7.274   0.001   .   1   .   .   .   .   A   2    PHE   HZ     .   30712   1
+      10   .   1   .   1   3    3    CYS   H      H   1   8.405   0.001   .   1   .   .   .   .   A   3    CYS   H      .   30712   1
+      11   .   1   .   1   3    3    CYS   HB2    H   1   2.699   0.003   .   2   .   .   .   .   A   3    CYS   HB2    .   30712   1
+      12   .   1   .   1   3    3    CYS   HB3    H   1   3.041   0.012   .   2   .   .   .   .   A   3    CYS   HB3    .   30712   1
+      13   .   1   .   1   4    4    VAL   H      H   1   8.521   0.006   .   1   .   .   .   .   A   4    VAL   H      .   30712   1
+      14   .   1   .   1   4    4    VAL   HA     H   1   4.528   0.012   .   1   .   .   .   .   A   4    VAL   HA     .   30712   1
+      15   .   1   .   1   4    4    VAL   HB     H   1   2.191   0.004   .   1   .   .   .   .   A   4    VAL   HB     .   30712   1
+      16   .   1   .   1   4    4    VAL   HG11   H   1   0.925   0.004   .   1   .   .   .   .   A   4    VAL   HG11   .   30712   1
+      17   .   1   .   1   4    4    VAL   HG12   H   1   0.925   0.004   .   1   .   .   .   .   A   4    VAL   HG12   .   30712   1
+      18   .   1   .   1   4    4    VAL   HG13   H   1   0.925   0.004   .   1   .   .   .   .   A   4    VAL   HG13   .   30712   1
+      19   .   1   .   1   4    4    VAL   HG21   H   1   0.860   0.005   .   1   .   .   .   .   A   4    VAL   HG21   .   30712   1
+      20   .   1   .   1   4    4    VAL   HG22   H   1   0.860   0.005   .   1   .   .   .   .   A   4    VAL   HG22   .   30712   1
+      21   .   1   .   1   4    4    VAL   HG23   H   1   0.860   0.005   .   1   .   .   .   .   A   4    VAL   HG23   .   30712   1
+      22   .   1   .   1   5    5    GLN   H      H   1   9.216   0.003   .   1   .   .   .   .   A   5    GLN   H      .   30712   1
+      23   .   1   .   1   5    5    GLN   HA     H   1   3.951   0.003   .   1   .   .   .   .   A   5    GLN   HA     .   30712   1
+      24   .   1   .   1   5    5    GLN   HB2    H   1   2.018   0.006   .   2   .   .   .   .   A   5    GLN   HB2    .   30712   1
+      25   .   1   .   1   5    5    GLN   HB3    H   1   2.018   0.006   .   2   .   .   .   .   A   5    GLN   HB3    .   30712   1
+      26   .   1   .   1   5    5    GLN   HG2    H   1   2.300   0.002   .   2   .   .   .   .   A   5    GLN   HG2    .   30712   1
+      27   .   1   .   1   5    5    GLN   HG3    H   1   2.360   0.017   .   2   .   .   .   .   A   5    GLN   HG3    .   30712   1
+      28   .   1   .   1   6    6    GLY   H      H   1   8.657   0.001   .   1   .   .   .   .   A   6    GLY   H      .   30712   1
+      29   .   1   .   1   6    6    GLY   HA2    H   1   3.680   0.001   .   2   .   .   .   .   A   6    GLY   HA2    .   30712   1
+      30   .   1   .   1   6    6    GLY   HA3    H   1   4.069   0.021   .   2   .   .   .   .   A   6    GLY   HA3    .   30712   1
+      31   .   1   .   1   7    7    DBB   H      H   1   7.604   0.004   .   1   .   .   .   .   A   7    DBB   H      .   30712   1
+      32   .   1   .   1   7    7    DBB   HA     H   1   4.180   0.007   .   1   .   .   .   .   A   7    DBB   HA     .   30712   1
+      33   .   1   .   1   7    7    DBB   HB2    H   1   3.710   0.003   .   1   .   .   .   .   A   7    DBB   HB2    .   30712   1
+      34   .   1   .   1   7    7    DBB   HG1    H   1   1.353   0.002   .   1   .   .   .   .   A   7    DBB   HG1    .   30712   1
+      35   .   1   .   1   7    7    DBB   HG2    H   1   1.353   0.002   .   1   .   .   .   .   A   7    DBB   HG2    .   30712   1
+      36   .   1   .   1   7    7    DBB   HG3    H   1   1.353   0.002   .   1   .   .   .   .   A   7    DBB   HG3    .   30712   1
+      37   .   1   .   1   8    8    ALA   H      H   1   8.060   0.002   .   1   .   .   .   .   A   8    ALA   H      .   30712   1
+      38   .   1   .   1   8    8    ALA   HA     H   1   4.278   0.002   .   1   .   .   .   .   A   8    ALA   HA     .   30712   1
+      39   .   1   .   1   8    8    ALA   HB1    H   1   1.420   0.008   .   1   .   .   .   .   A   8    ALA   HB1    .   30712   1
+      40   .   1   .   1   8    8    ALA   HB2    H   1   1.420   0.008   .   1   .   .   .   .   A   8    ALA   HB2    .   30712   1
+      41   .   1   .   1   8    8    ALA   HB3    H   1   1.420   0.008   .   1   .   .   .   .   A   8    ALA   HB3    .   30712   1
+      42   .   1   .   1   9    9    ASN   H      H   1   8.604   0.004   .   1   .   .   .   .   A   9    ASN   H      .   30712   1
+      43   .   1   .   1   9    9    ASN   HA     H   1   4.679   0.024   .   1   .   .   .   .   A   9    ASN   HA     .   30712   1
+      44   .   1   .   1   10   10   ARG   H      H   1   8.344   0.004   .   1   .   .   .   .   A   10   ARG   H      .   30712   1
+      45   .   1   .   1   10   10   ARG   HA     H   1   4.393   0.006   .   1   .   .   .   .   A   10   ARG   HA     .   30712   1
+      46   .   1   .   1   10   10   ARG   HB2    H   1   1.721   0.027   .   2   .   .   .   .   A   10   ARG   HB2    .   30712   1
+      47   .   1   .   1   10   10   ARG   HB3    H   1   1.743   0.026   .   2   .   .   .   .   A   10   ARG   HB3    .   30712   1
+      48   .   1   .   1   10   10   ARG   HG2    H   1   1.545   0.009   .   2   .   .   .   .   A   10   ARG   HG2    .   30712   1
+      49   .   1   .   1   10   10   ARG   HG3    H   1   1.545   0.009   .   2   .   .   .   .   A   10   ARG   HG3    .   30712   1
+      50   .   1   .   1   10   10   ARG   HD2    H   1   3.128   0.002   .   2   .   .   .   .   A   10   ARG   HD2    .   30712   1
+      51   .   1   .   1   10   10   ARG   HD3    H   1   3.128   0.002   .   2   .   .   .   .   A   10   ARG   HD3    .   30712   1
+      52   .   1   .   1   11   11   PHE   H      H   1   8.586   0.001   .   1   .   .   .   .   A   11   PHE   H      .   30712   1
+      53   .   1   .   1   11   11   PHE   HA     H   1   4.322   0.000   .   1   .   .   .   .   A   11   PHE   HA     .   30712   1
+      54   .   1   .   1   11   11   PHE   HB2    H   1   2.961   0.004   .   2   .   .   .   .   A   11   PHE   HB2    .   30712   1
+      55   .   1   .   1   11   11   PHE   HB3    H   1   3.043   0.010   .   2   .   .   .   .   A   11   PHE   HB3    .   30712   1
+      56   .   1   .   1   11   11   PHE   HD1    H   1   7.199   0.008   .   3   .   .   .   .   A   11   PHE   HD1    .   30712   1
+      57   .   1   .   1   11   11   PHE   HD2    H   1   7.199   0.008   .   3   .   .   .   .   A   11   PHE   HD2    .   30712   1
+      58   .   1   .   1   11   11   PHE   HE1    H   1   7.319   0.008   .   3   .   .   .   .   A   11   PHE   HE1    .   30712   1
+      59   .   1   .   1   11   11   PHE   HE2    H   1   7.319   0.008   .   3   .   .   .   .   A   11   PHE   HE2    .   30712   1
+      60   .   1   .   1   11   11   PHE   HZ     H   1   7.276   0.013   .   1   .   .   .   .   A   11   PHE   HZ     .   30712   1
+      61   .   1   .   1   12   12   DBB   H      H   1   8.571   0.001   .   1   .   .   .   .   A   12   DBB   H      .   30712   1
+      62   .   1   .   1   12   12   DBB   HA     H   1   4.302   0.009   .   1   .   .   .   .   A   12   DBB   HA     .   30712   1
+      63   .   1   .   1   12   12   DBB   HB2    H   1   4.302   0.009   .   1   .   .   .   .   A   12   DBB   HB2    .   30712   1
+      64   .   1   .   1   12   12   DBB   HG1    H   1   4.302   0.009   .   1   .   .   .   .   A   12   DBB   HG1    .   30712   1
+      65   .   1   .   1   12   12   DBB   HG2    H   1   4.302   0.009   .   1   .   .   .   .   A   12   DBB   HG2    .   30712   1
+      66   .   1   .   1   12   12   DBB   HG3    H   1   4.302   0.009   .   1   .   .   .   .   A   12   DBB   HG3    .   30712   1
+      67   .   1   .   1   13   13   ILE   H      H   1   7.760   0.002   .   1   .   .   .   .   A   13   ILE   H      .   30712   1
+      68   .   1   .   1   13   13   ILE   HA     H   1   4.151   0.005   .   1   .   .   .   .   A   13   ILE   HA     .   30712   1
+      69   .   1   .   1   13   13   ILE   HB     H   1   1.763   0.004   .   1   .   .   .   .   A   13   ILE   HB     .   30712   1
+      70   .   1   .   1   13   13   ILE   HG12   H   1   1.028   0.003   .   2   .   .   .   .   A   13   ILE   HG12   .   30712   1
+      71   .   1   .   1   13   13   ILE   HG13   H   1   1.271   0.002   .   2   .   .   .   .   A   13   ILE   HG13   .   30712   1
+      72   .   1   .   1   13   13   ILE   HG21   H   1   0.835   0.003   .   1   .   .   .   .   A   13   ILE   HG21   .   30712   1
+      73   .   1   .   1   13   13   ILE   HG22   H   1   0.835   0.003   .   1   .   .   .   .   A   13   ILE   HG22   .   30712   1
+      74   .   1   .   1   13   13   ILE   HG23   H   1   0.835   0.003   .   1   .   .   .   .   A   13   ILE   HG23   .   30712   1
+      75   .   1   .   1   14   14   ASN   H      H   1   8.427   0.002   .   1   .   .   .   .   A   14   ASN   H      .   30712   1
+      76   .   1   .   1   14   14   ASN   HA     H   1   4.614   0.017   .   1   .   .   .   .   A   14   ASN   HA     .   30712   1
+      77   .   1   .   1   15   15   VAL   H      H   1   7.829   0.004   .   1   .   .   .   .   A   15   VAL   H      .   30712   1
+      78   .   1   .   1   15   15   VAL   HA     H   1   4.095   0.020   .   1   .   .   .   .   A   15   VAL   HA     .   30712   1
+      79   .   1   .   1   15   15   VAL   HB     H   1   2.147   0.004   .   1   .   .   .   .   A   15   VAL   HB     .   30712   1
+      80   .   1   .   1   15   15   VAL   HG11   H   1   0.909   0.013   .   1   .   .   .   .   A   15   VAL   HG11   .   30712   1
+      81   .   1   .   1   15   15   VAL   HG12   H   1   0.909   0.013   .   1   .   .   .   .   A   15   VAL   HG12   .   30712   1
+      82   .   1   .   1   15   15   VAL   HG13   H   1   0.909   0.013   .   1   .   .   .   .   A   15   VAL   HG13   .   30712   1
+      83   .   1   .   1   15   15   VAL   HG21   H   1   0.874   0.026   .   1   .   .   .   .   A   15   VAL   HG21   .   30712   1
+      84   .   1   .   1   15   15   VAL   HG22   H   1   0.874   0.026   .   1   .   .   .   .   A   15   VAL   HG22   .   30712   1
+      85   .   1   .   1   15   15   VAL   HG23   H   1   0.874   0.026   .   1   .   .   .   .   A   15   VAL   HG23   .   30712   1
+      86   .   1   .   1   16   16   CYS   H      H   1   8.181   0.003   .   1   .   .   .   .   A   16   CYS   H      .   30712   1
+      87   .   1   .   1   16   16   CYS   HA     H   1   4.201   0.014   .   1   .   .   .   .   A   16   CYS   HA     .   30712   1
+      88   .   1   .   1   16   16   CYS   HB2    H   1   2.569   0.003   .   2   .   .   .   .   A   16   CYS   HB2    .   30712   1
+      89   .   1   .   1   16   16   CYS   HB3    H   1   3.028   0.003   .   2   .   .   .   .   A   16   CYS   HB3    .   30712   1
+   stop_
+save_
+
