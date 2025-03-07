@@ -1,13 +1,13 @@
 # Lanthipeptide Folding Protocol Project
 
-This project contains various directories and scripts related to the study and analysis of lanthipeptides.
+This project contains the protocol capture for "computational structure prediction of lanthipeptides with NMR data reeals underappreciated peptide flexibility." 
 
 ## Directory Structure
 
 - `af_pred/`: Contains the AlphaFold predictions for four-helical lanthipeptides, as well as further analysis of these peptides. The peptides considered helical are `2KTO`, `6VE9`, `6VGT`, and `8CWX`.
 - `input_pdb/`: Stores input PDB files of lanthipeptides sourced from the Protein Data Bank (PDB).
 - `flex_ripp_scan/`: Includes structure prediction and analysis of non-helical lanthipeptides. The non-helical peptides are `1AJ1`, `6PQG`, `6VHJ`, `6VLJ`, `7JU9`, and `7JVF`.
-- `NCAA/`: Houses the parameterization of non-canonical amino acids (NCAA) used in the study.
+- `NCAA/`: Houses the parameterization of non-canonical amino acids (NCAA) used in the study. This includes paramaterization for Rosetta and parameter development with QM calculations. 
 - `renamed_pdb/`: Contains PDB files that have been processed and renamed according to the project's conventions.
 - `scripts/`: A collection of Python scripts used for various analysis and processing tasks within the project.
 
