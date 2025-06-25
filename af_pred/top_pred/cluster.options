@@ -1,0 +1,5 @@
+-cluster:energy_based_clustering:cluster_radius 2.0
+-cluster:energy_based_clustering:limit_structures_per_cluster 30
+-cluster:energy_based_clustering:cluster_by bb_cartesian
+-cluster:energy_based_clustering:limit_clusters 30
+-in:file:extra_res_path /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/NCAA/uff_params/final_params/

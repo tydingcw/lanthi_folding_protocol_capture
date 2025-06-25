@@ -26,8 +26,8 @@ def get_ens_min_scoring(scorefile, ensemble):
     #for name in ensemble:
     #    df = full_df.loc[full_df['description'] == name ]
     for index, row in full_df.iterrows():
-        #print()
-        if row['description'].split('/')[-1].split('.')[0] in ensemble:
+        #print(row['description'])
+        if pd.notna(row['description']) and row['description'].split('/')[-1].split('.')[0] in ensemble:
             scores[float(row['total_score'])] = row['description']
             
     #return df.nsmallest(n=1, columns=['total_score'])['description'].iloc[0]
