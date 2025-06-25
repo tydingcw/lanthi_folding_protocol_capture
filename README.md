@@ -5,6 +5,7 @@ This project contains the protocol capture for "computational structure predicti
 ## Directory Structure
 
 - `af_pred/`: Contains the AlphaFold predictions for four-helical lanthipeptides, as well as further analysis of these peptides. The peptides considered helical are `2KTO`, `6VE9`, `6VGT`, and `8CWX`.
+- `chem_shift_calc/`: Calculation of backbone chemical shifts with sparta.
 - `input_pdb/`: Stores input PDB files of lanthipeptides sourced from the Protein Data Bank (PDB).
 - `flex_ripp_scan/`: Includes structure prediction and analysis of non-helical lanthipeptides. The non-helical peptides are `1AJ1`, `6PQG`, `6VHJ`, `6VLJ`, `7JU9`, and `7JVF`.
 - `NCAA/`: Houses the parameterization of non-canonical amino acids (NCAA) used in the study. This includes paramaterization for Rosetta and parameter development with QM calculations. 
