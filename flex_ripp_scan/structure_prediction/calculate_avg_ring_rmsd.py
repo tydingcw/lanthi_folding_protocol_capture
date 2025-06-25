@@ -38,7 +38,8 @@ def get_ring_avg(scorefile):
             rmsd_val += float(row[col])
         eng_val /= len(eng_cols)
         rmsd_val /= len(rmsd_cols)
-        data.append([str(rmsd_val), str(eng_val)])
+        if pd.notna(eng_val) and pd.notna(rmsd_val):
+            data.append([str(rmsd_val), str(eng_val)])
  
     return data
 

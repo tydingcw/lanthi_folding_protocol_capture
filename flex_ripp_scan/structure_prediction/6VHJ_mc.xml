@@ -1,0 +1,90 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+    	<ScoreFunction name="r15" weights="ref2015"/>
+    	<ScoreFunction name="r15_cst" weights="ref2015_cst"/>
+    	<ScoreFunction name="r15_cart" weights="ref2015_cart_cst"/>
+    </SCOREFXNS>
+    <RESIDUE_SELECTORS>
+        Index name="peptide" resnums="%%start%%-%%end%%"/>
+        <Chain name="peptide" chains="A"/>
+        <Index name="lan1" resnums="3,7"/>
+        <Index name="ring1" resnums="3-7"/>
+        <Index name="lan2" resnums="12,16"/>
+        <Index name="ring2" resnums="12-16"/>
+    </RESIDUE_SELECTORS>
+    <TASKOPERATIONS>
+        <IncludeCurrent name="incl_curr" />
+        <RestrictToRepacking name="rtrp"/>
+    </TASKOPERATIONS>
+    <SIMPLE_METRICS>
+        <RMSDMetric name="calc_rmsd_full" residue_selector="peptide" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="calc_rmsd_bb" residue_selector="peptide" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <TotalEnergyMetric name="cst_eng" scorefxn="r15_cst" scoretype="atom_pair_constraint" />
+        <TotalEnergyMetric name="eng_no_cst" scorefxn="r15" />
+        <SasaMetric name="SASA" />
+        <DihedralDistanceMetric name="ring1_dih" use_native="true" residue_selector="ring1"/>
+        <TotalEnergyMetric name="ring1_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="ring1"/>
+        <PeptideInternalHbondsMetric name="ring1_hbond" residue_selector="ring1"/>
+        <TotalEnergyMetric name="ring1_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring1"/>
+        <RMSDMetric name="ring1_rmsd_full" residue_selector="ring1" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring1_rmsd_bb" residue_selector="ring1" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+        <DihedralDistanceMetric name="ring2_dih" use_native="true" residue_selector="ring2"/>
+        <TotalEnergyMetric name="ring2_eng" scorefxn="r15_cst" scoretype="total_score" residue_selector="ring2"/>
+        <PeptideInternalHbondsMetric name="ring2_hbond" residue_selector="ring2"/>
+        <TotalEnergyMetric name="ring2_nmr" scorefxn="r15_cst" scoretype="atom_pair_constraint" residue_selector="ring2"/>
+        <RMSDMetric name="ring2_rmsd_full" residue_selector="ring2" rmsd_type="rmsd_all_heavy" use_native="true" super="true"/>
+        <RMSDMetric name="ring2_rmsd_bb" residue_selector="ring2" rmsd_type="rmsd_protein_bb_heavy_including_O" use_native="true" super="true"/>
+    </SIMPLE_METRICS>
+    <MOVERS>
+        <CrosslinkerMover name="cyclize1" linker_name="lanthionine"
+            residue_selector="lan1" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="true"
+        />
+        <CrosslinkerMover name="cyclize2" linker_name="lanthionine"
+            residue_selector="lan2" scorefxn="r15_cst"
+            filter_by_constraints_energy="false"
+            filter_by_sidechain_distance="false"
+            pack_and_minimize_linker_and_sidechains="true"
+        />
+        <ConstraintSetMover name="add_link_cst" add_constraints="true" cst_file="6VHJ_link.cst"/>
+        <Sidechain name="sidechain" preserve_detailed_balance="1" task_operations="rtrp" prob_withinrot="0.5" prob_uniform="0.2"/>
+        <Small name="small" scorefxn="r15_cst" temperature="0.6" nmoves="1" angle_max="6.0" preserve_detailed_balance="1"/>
+        <Shear name="shear" scorefxn="r15_cst" temperature="0.6" nmoves="1" angle_max="6.0" preserve_detailed_balance="1"/>
+        <ParsedProtocol name="mc_steps">
+                <Add mover_name="small"/>
+                <Add mover_name="shear"/>
+                <Add mover_name="sidechain"/>
+        </ParsedProtocol>
+        <GenericMonteCarlo name="mc_refine1"  scorefxn_name="r15_cst" mover_name="mc_steps" drift="true" temperature="2.0" trials="1000" recover_low="0" />
+        <GenericMonteCarlo name="mc_refine2"  scorefxn_name="r15_cst" mover_name="mc_steps" drift="true" temperature="2.0" trials="9000" recover_low="1" />
+        <FastRelax name="init_frlx" repeats="5" scorefxn="r15_cst" min_type="dfpmin" task_operations="incl_curr" />
+        RemoveConstraints name="rm_coord_cst" constraint_generators="coord_cst"/>
+        <ConstraintSetMover name="add_nmr_cst" add_constraints="true" cst_file="6VHJ_noe.cst"/>
+        <ClearConstraintsMover name="rm_cst"/>
+        <MinMover name="cart_min" cartesian="true" bondlength="0" bondangle="1" bb="false" omega="false" chi="true" scorefxn="r15_cart" />
+
+    </MOVERS>
+    <APPLY_TO_POSE>
+    </APPLY_TO_POSE>
+    <PROTOCOLS>
+        <Add mover="cyclize1" />
+        <Add mover="cyclize2" />
+        <Add mover="rm_cst" />
+        <Add mover="add_link_cst" />
+        <Add mover="mc_refine1" />
+        <Add mover="mc_refine2" />
+        <Add mover="rm_cst" />
+        <Add mover="cyclize1" />
+        <Add mover="cyclize2" />
+        <Add mover="init_frlx" />
+        <Add metrics="ring1_dih,ring1_eng,ring1_hbond,ring1_rmsd_full,ring1_rmsd_bb,ring2_dih,ring2_eng,ring2_hbond,ring2_rmsd_full,ring2_rmsd_bb" labels="ring1_dih,ring1_eng,ring1_hbond,ring1_rmsd_full,ring1_rmsd_bb,ring2_dih,ring2_eng,ring2_hbond,ring2_rmsd_full,ring2_rmsd_bb"/>
+        <Add metrics="calc_rmsd_full" labels="rmsd_full"/>
+        <Add metrics="calc_rmsd_bb" labels="rmsd_bb"/>
+        <Add metrics="SASA" labels="SASA"/>
+        Add metrics="run_metrics" labels="run_metrics"/>
+        <Add metrics="eng_no_cst" labels="eng_no_cst" />
+    </PROTOCOLS>
+    <OUTPUT scorefxn="r15_cst" />
+</ROSETTASCRIPTS>

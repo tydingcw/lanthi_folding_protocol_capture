@@ -1,0 +1,12 @@
+-parser:protocol relax_6VLJ_free_nmr.xml
+-in:file:native /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/renamed_pdb//6VLJ_1_rename.pdb
+-nstruct 20
+-out:file:scorefile 6VLJ_free_nmr_relax.sc
+-use_input_sc true
+-in:file:fullatom
+-ignore_zero_occupancy false
+-linmem_ig 10
+-out:pdb_gz
+-out:prefix 6VLJ_nmr/free_nmr_
+-in:detect_disulf false
+-in:file:extra_res_path /home/tydingcw/Documents/EGFR_antibodies/RiPP_design/NCAA/uff_params/final_params/
