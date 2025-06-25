@@ -1114,19 +1114,19 @@ if __name__ == "__main__":
     #argument=parser.parse_args()
 
     ripp_len_dict = {}
-    ripp_len_dict['1AJ1'] = 19 #- Jung
-    ripp_len_dict['6VHJ'] = 16
+    #ripp_len_dict['1AJ1'] = 19 #- Jung
+    #ripp_len_dict['6VHJ'] = 16
     #ripp_len_dict['6PQF'] = 19 - Has IAS
-    ripp_len_dict['6PQG'] = 19 #file caused error - chainbreaker
+    #ripp_len_dict['6PQG'] = 19 #file caused error - chainbreaker
     #ripp_len_dict['6VE9'] = 21 - Mostly alpha helical peptide
-    ripp_len_dict['6VLJ'] = 19
-    ripp_len_dict['7JU9'] = 20 # has DBU
-    ripp_len_dict['7JVF'] = 21 #has DBU
+    #ripp_len_dict['6VLJ'] = 19
+    #ripp_len_dict['7JU9'] = 20 # has DBU
+    #ripp_len_dict['7JVF'] = 21 #has DBU
     #'6PQG', '7JVF', '7JU9'
-    #ripp_len_dict['2KTO'] = 1
-    #ripp_len_dict['8CWX'] = 1
-    #ripp_len_dict['6VGT'] = 1
-    #ripp_len_dict['6VE9'] = 1
+    ripp_len_dict['2KTO'] = 1
+    ripp_len_dict['8CWX'] = 1
+    ripp_len_dict['6VGT'] = 1
+    ripp_len_dict['6VE9'] = 1
 
     renamed_path = '/home/tydingcw/Documents/EGFR_antibodies/RiPP_design/renamed_pdb/'
 
