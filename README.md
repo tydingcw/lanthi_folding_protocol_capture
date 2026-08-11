@@ -2,6 +2,8 @@
 
 This project contains the protocol capture for "computational structure prediction of lanthipeptides with NMR data reeals underappreciated peptide flexibility." 
 
+[Computational structure prediction of lanthipeptides with NMR data reveals underappreciated peptide flexibility](https://onlinelibrary.wiley.com/doi/10.1002/pro.70252?msockid=0961644d534a65aa156175a3522564f9)
+
 ## Directory Structure
 
 - `af_pred/`: Contains the AlphaFold predictions for four-helical lanthipeptides, as well as further analysis of these peptides. The peptides considered helical are `2KTO`, `6VE9`, `6VGT`, and `8CWX`.
